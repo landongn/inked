@@ -1,5 +1,5 @@
 {
-  "name": "~TODO~",
+  "name": "inked",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -19,6 +19,6 @@
   },
   "type": "module",
   "dependencies": {
-    "inkjs": "^2.0.0"
+    "inkjs": "github:landongn/inkjs"
   }
 }

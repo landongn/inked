@@ -43,5 +43,12 @@ You can take this project as is, clean and fresh from github, and deploy it to s
 
 
 ## Known Issues
-- using inkjs will fail until [this pr](https://github.com/y-lohse/inkjs/pull/903) is merged -- until then, you'll need to use `npm link` alongside a local copy that can output ES6 modules. 
+- using inkjs will fail until [this pr](https://github.com/y-lohse/inkjs/pull/903) is merged -- until then, you'll need to use [this fork](https://github.com/landongn/inkjs) until it's merged. to do so, open up package.json and make sure your `dependencies` is set to
+```
+"dependencies": {
+  "inkjs": "github:landongn/inkjs"
+}
+```
+
+an re-run `npm install` to download the fork. Everything should work not (if not, shout at me @landongn on twitter or pop open an issue)
 
