@@ -6,7 +6,7 @@ However, in order to make stories more expressive and artistic, inked attempts t
 In other words, you have creative control over how each ink story step is rendered into html, along with control over how to make them interactive (click, drag, swipe, and so on.), without sacrificing a powerful and expressive interactivity model based on a familiar, web based interaction paradigm.
 
 ## why?
-I like [Twine] and I think [ink] is a superb tool. My hesitation into investing more into interactive fiction and storytelling has been that I haven't had the right tools to customize the presentation as much as i'd like.  A lot of Twine games look and feel similar.  
+The web is a perfect medium for interactive fiction; writing interactive fiction web applications isn't exactly a great time. 
 
 With inked, the goal is that it is a "Unity for inked" on the web.  It should be easy to get started, and have dark blood magics for those willing to go the extra step.  
 
