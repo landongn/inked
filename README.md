@@ -23,6 +23,8 @@ Suffice to say, this is really early days.  The amount of work left to do before
 - [ ] support audio cues from ink annotations
 - [ ] add optional animation into text output
 - [ ] add a configurable line count for main narrative
+- [ ] (STRETCH) add websocket based multiplayer support with corresponding serverless websocket implementation
+- [ ] (STRETCH) add serverless analytics for stories to understand common paths through your narrative
 
 However, if you have an interest in contributing to any of the above, feel free!
 
@@ -55,6 +57,13 @@ In the simplest possible terms, you'd create your ink formatted script, export t
 
 You can take this project as is, clean and fresh from github, and deploy it to services like [netlify](https://netlify.com) or [vercel](https://netlify.com) -- you could even upload a zip of a static site containing everything the game needs to run as a static site, to places like [itch.io](https://itch.io)
 
+### inked for narrative designers / creators
+The most important thing to understand about what's going on under the hood is each knot within your ink story is essentially a game state, and should be named similar to a "world -> area -> interaction" format.  The goal here is to be able to ensure that we have enough detail in our knot relationships that you can create components based on each segment of the name. e.g; `seattle_fuchi_arcology_exterior_night_introduction` as as knot identifier gives us considerable customization; we can build components for each of those segments -- inked parses knot ids into components, split by underscores -- and by defining components with `CapCase` in the project and importing them into your root component (typically `index.svelte`) they will render when the corresponding knot id is active. 
+
+This is the most important concept to understand about working with inked; your knots are identified with a tree of components, which you create and define in `inked/src/components`, import into your root component tree `inked/src/routes/index.svelte`, and are rendered when identified by inked. 
+
+### inked for web developers
+the ink format is essentially markdown for narrative design, and similar tricks we've picked up along the long road of using markdown to drive webpages applies here. The main driving force behind the front-end implementation is the `StateManager` class, which exists as a way to bind ink annotations to some javascript state. When the story state changes, these properties update and drive the component rendering process. In a typical implementation, the `StateManager` class will be considerably augmented to fit your specific annotation style and story flow. 
 
 ## Known Issues
 - using inkjs will fail until [this pr](https://github.com/y-lohse/inkjs/pull/903) is merged -- until then, you'll need to use [this fork](https://github.com/landongn/inkjs) until it's merged. to do so, open up package.json and make sure your `dependencies` is set to
