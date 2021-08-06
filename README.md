@@ -3,7 +3,7 @@ Inked is a tool that takes in a [ink](https://www.inklestudios.com/ink/) story's
 
 However, in order to make stories more expressive and artistic, inked attempts to extend the ink specifications by mapping them into [Svelte Components](https://svelte.dev) -- web components, basically -- to provide a full suite of tools to construct visual representations for everything within the ink specficiations, as well as some fun tricks. 
 
-In other words, you have creative control over how each ink story step is rendered into html, along with control over how to make them interactive (click, drag, swipe, and so on.), without sacrificing a powerful and expressive interactivity model based on a familiar, web based interaction paradigm.
+In other words, you have total creative control over how each ink story step is rendered into html, along with control over how to make them interactive (click, drag, swipe, and so on.), without sacrificing a powerful and expressive interactivity model based on a familiar, web based interaction paradigm.
 
 ## why?
 The web is a perfect medium for interactive fiction; writing interactive fiction web applications isn't exactly a great time. 
@@ -11,6 +11,20 @@ The web is a perfect medium for interactive fiction; writing interactive fiction
 With inked, the goal is that it is a "Unity for inked" on the web.  It should be easy to get started, and have dark blood magics for those willing to go the extra step.  
 
 Utilizing svelte and the wonderful [svelte-kit](https://kit.svelte.dev) means that we get powerful, lightweight, fast webpages to run our creations, and deployment is simple to [many different providers](https://kit.svelte.dev/docs#adapters)
+
+## Plans for further development
+Suffice to say, this is really early days.  The amount of work left to do before this is 1.0 is quite a bit:
+- [ ] implement diverts and knots
+- [ ] map knots into specific component layout 
+- [ ] add examples for common use cases
+- [ ] add examples for how to animate 'the svelte way' with ink content
+- [ ] support custom annotations within ink files for "custom action component trees"
+- [ ] support sprite components and viewport constraint positoning
+- [ ] support audio cues from ink annotations
+- [ ] add optional animation into text output
+- [ ] add a configurable line count for main narrative
+
+However, if you have an interest in contributing to any of the above, feel free!
 
 ## Developing 
 
