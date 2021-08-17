@@ -1,4 +1,4 @@
--> chapter_1 
+
 === chapter_1
 If this thing could be said to have started anywhere, I suppose it started with a woman with a gun.
 It had been one of those days. I was scragged to the bone, so tired I could barely keep my eyes open
@@ -232,10 +232,10 @@ knees and she was gripping the sides of her head as if to keep her skull from ex
 body was racked with gasping sobs.
 I turned away, a little embarrassed. Not wanting to intrude further on the grief of this weeping woman,
 I picked up the forgotten picture.
--> chapter_2
 
 === chapter_2
-Lolita Yzerman. The holo was obviously an amateur job, slightly out of focus and the perspective a bit off. But it was good enough. It was unmistakably Lolly who smiled out from the holo.
+Lolita Yzerman. The holo was obviously an amateur job, slightly out of focus and the perspective a bit
+off. But it was good enough. It was unmistakably Lolly who smiled out from the holo.
 On the surface, Lolly and Jocasta did not show a striking family resemblance. Jocasta was tall, where
 Lolly was short, with wavy blonde hair and bright blue eyes. And Jocasta was slender, somewhat sharp and
 austere, where Lolly was attractively rounded in all the right places. Looking closer, though, I could see the
@@ -248,10 +248,22 @@ she follow in her father's footsteps. She'd entered the University of Washington
 program at the tender age of fifteen, graduating less than three years later, U-Dub's youngest honor grad. I
 suppose her father had been supplementing her training as well. Even while still a student, Lolly was doing
 hired-gun programming work for a drekload of local outfits, all the while building an extraordinary track
-record. 
-    Predictably, she decided that she needed a datajack to really progress, but her father refused to even consider letting his daughter go under the laser until she was twenty-one. Just as predictably, Lolly didn't give a frag what her father said. She took on a few more contracts to earn enough nuyen, then ran away to get the operation done. She was still only seventeen, I think. Lolly's father had punished her when she returned home, the shiny new jack in place, but Lolly was sure he was secretly very proud. She laughed when telling me about it. 
-
-    The contracts kept coming from all over: Matrix programming, system analysis, hardware design and maybe even a few shadowy Matrix runs, but she never talked about that. Until now a generalist, Lolly began to specialize. She'd always loved solving puzzles, she'd told me, and soon she found her niche in signal-enhancement and "washing." Washing was the half-art, half-science of picking out the true signal from background noise, and then cleaning it of distortion. Her goal had always been to work for UCASSA-the UCAS Space Agency-enhancing signals from deep-space probes, improving the signal-to-noise, or S/N, ratio. But she was still young, and would need to gather more experience before she could get the job she wanted. And that was why she signed on with Avatar Security Technologies, one of the Lone Star subsidiaries-to get experience.
+record.
+Predictably, she decided that she needed a datajack to really progress, but her father refused to even
+consider letting his daughter go under the laser until she was twenty-one. Just as predictably, Lolly didn't
+give a frag what her father said. She took on a few more contracts to earn enough nuyen, then ran away to
+get the operation done. She was still only seventeen, I think. Lolly's father had punished her when she
+returned home, the shiny new jack in place, but Lolly was sure he was secretly very proud. She laughed
+when telling me about it.
+The contracts kept coming from all over: Matrix programming, system analysis, hardware design and
+maybe even a few shadowy Matrix runs, but she never talked about that. Until now a generalist, Lolly
+began to specialize. She'd always loved solving puzzles, she'd told me, and soon she found her niche in
+signal-enhancement and "washing." Washing was the half-art, half-science of picking out the true signal
+from background noise, and then cleaning it of distortion. Her goal had always been to work for
+UCASSA-the UCAS Space Agency-enhancing signals from deep-space probes, improving the
+signal-to-noise, or S/N, ratio. But she was still young, and would need to gather more experience before she
+could get the job she wanted. And that was why she signed on with Avatar Security Technologies, one of
+the Lone Star subsidiaries-to get experience.
 Lone Star needs signal-enhancement specialists, too, but for a very different reason than UCASSA.
 When Lone Star conducts an investigation, standard procedure is to tap the telecoms of everyone even
 peripherally involved with the subject of the investigation. That's right, everyone, whether or not he or she
@@ -764,7 +776,7 @@ been planning, and laughed. I returned the picture to my wallet, kicked the tele
 collapsed on the bed. Images flowed over the insides of my eyelids. Explosions, gun muzzles, targeting
 lasers. But mostly young, blonde women: sometimes Lolly, sometimes Juli Long. They followed me down
 into the dark pit of sleep.
--> chapter_4
+
 === chapter_4
 Early morning is one of the quietest times in a jungle. Nocturnal predators have called it a night, and
 their diurnal counterparts are only just stirring. The same thing's true in Redmond, and for the same
@@ -1079,7 +1091,6 @@ To my surprise, there was one hit. Displaying the full text, I skimmed it quickl
 Then I took the picture from my wallet and looked at it one last time. This wasn't a good week for
 young blondes. The fact that I'd predicted it didn't make me feel any better.
 Juli Long had been found floating off Pier 23. Dead, of course.
--> chapter_5
 
 === chapter_5
 I remember once reading that it's better to waste your childhood than not to do anything at all with it. I
@@ -2526,7 +2537,7 @@ advance matters over the next few hours. I reviewed in my head ways I could go a
 Buddy was covering all the bureaucratic avenues. Magic? I'm no mage, but even the drek-hot practitioners
 out there wouldn't be much help. As far as I knew, you couldn't track somebody magically with nothing to
 go on but a name. (Could you? If somebody had figured out how to do it, that meant Lone Star's combat
-mages might someday track me down, no matter where I went. It would definitely be in my best interest) I
+mages might someday track me down, no matter where I went. It would definitely be in my best interest} I
 realized, to stay a little bit more in touch with magical research.)
 
 How about the personal touch? I could show up at the Brotherhood chapterhouse and try to track
@@ -2865,7 +2876,6 @@ I shook my head. "I figured it wouldn't mean anything to me. Call me when you kn
 I broke the connection, leaned back in my chair and rubbed my aching eyes. Then I looked around the
 squalid little apartment. The last thing I wanted to do was sit around here, but I figured I'd better stay close
 to the phone. Frag it. Waiting is always the hardest part.
--> chapter_11
 
 === chapter_11
 I ended up doing what I usually do when it's necessary to wait. I slept. Frag, I can even justify the
