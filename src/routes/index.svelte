@@ -1,6 +1,6 @@
 <script context="module">
   export async function load({ page, fetch, session, context }) {
-    const res = await fetch("http://localhost:3000/json/2xs.json");
+    const res = await fetch("/json/2xs.json");
     if (res.ok) {
       return {
         props: {
