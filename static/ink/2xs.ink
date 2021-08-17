@@ -1,354 +1,311 @@
--> chapter_1 
-=== chapter_1
-If this thing could be said to have started anywhere, I suppose it started with a woman with a gun.
-It had been one of those days. I was scragged to the bone, so tired I could barely keep my eyes open
-as I climbed the two flights of stairs to my doss in the La Jolla Apartments. (Don't be fooled. The name
-may be fancy, but that's about all that can make the claim on D Street in Auburn.) Assorted lacerations and
-abrasions about my neck and chest were making their presence felt, and a nasty contusion on my left
-thigh-where my armored duster had just barely stopped a small-caliber round-throbbed dully. On the bright
-side, the certified credstick in my pants pocket bulged with nuyen and was like a comfortable warmth. I
-could never be sure when dealing with Anwar the fixer, but this time he had paid my fee in full.
-I was glad to see that the corridor leading to my door was empty. Security at the La Jolla is a laugh
-when it comes to keeping out serious trouble, but it's generally enough to keep out the gutterpunks and
-chippies. Just as well, too. Scragged as I was, I wouldn't have been much good at persuading some
-half-drowned squatter to step aside. Reaching my door, I thumbed the lock, then stepped inside with a sigh.
-The message light on my telecom was flashing, the sequence indicating the number of calls that had
-come in. I gave up counting at nine. What could I expect after being out of the sprawl for almost five days?
-For a while I'd had a portable phone, but I'd quit carrying it when the damn thing went off during a
-surveillance job. I'd forgotten to disable the buzzer, and almost got my head blown off. Right now I wasn't
-in any drekking mood to deal with phone messages, but, it was possible one of the calls might be related to a
-case I was working on. Even better, there might be an offer to take on a new case.
-Case. Why not use the word most people would for what I do? Shadowrun.
-To me, there's a difference, that's why. Other people might not recognize it, but the distinction matters
-to me. Circumstances may have forced me to edge my way into the shadows, but I emphatically do not
-consider myself a shadowrunner. A shadowrunner will usually take on any kind of operation he's physically
-able to handle: extraction, datasteal, lift-out, transport, muscle, even-in some cases-out-and-out wetwork.
-Me, I'm selective. I'll do surveillance, I'll do recovery, I'll even do close-cover if I figure the body I'm
-guarding is worth keeping alive. But I've got to know the why before I'll take any job, and the reason has to
-make at least a bit of sense to me. The world's a dark place, full of people who either enjoy making it
-darker or else don't give a frag if that's ' how it works out. I'm not so dense as to believe I can reverse that
-trend all by my lonesome, but I sure as drek can decide not to make it any worse. And even if I did want to
-make it worse, hell, I'd have too much competition.
-Remember about twelve years back that revival of old-I mean old-pre-simsense, "hard-boiled"
-detective fiction? It was real period stuff, set maybe a century ago, but it seemed to really click with some
-people. If I'd been in business in those old days, I'd probably have had a license, an office-maybe with my
-name on the frosted glass door, "Derek Montgomery, Investigations"-and a gun. Now? No license, and my
-office is wherever I happen to be at the time. I've got the gun, though.
-The throbbing in my left thigh reminded me that, unfortunately, so does everybody else. And too many
-people aren't afraid to use that firepower, no matter how small the provocation. Take today, for example.
-The guy who shot me wasn't even involved with the case I was working. He was just some wireheaded kid
-who'd slotted one too many "Slade the Sniper" chips and decided to unload his Streetline Special into a
-crowd of pedestrians. I just happened to be in the wrong place at the wrong time. The kid's luck wasn't any
-better. Very calmly, very professionally, the guy beside me handled the situation by sending a magical
-fireball back along the line of fire and cooking the kid where he stood. Then the mage just as calmly moved
-off down an alley, and that was that. Such is life (and death) in the Awakened world.
-Well, at least I could turn my back on all that for the next twelve hours. Even better, I wouldn't have to
-worry about people pointing guns at me. And if they did, I'd be too sound asleep to know it. I kicked the
-door shut, made sure the maglock was engaged, and hung my duster on a hook in the corner. The drab
-wash of the rainy Auburn twilight leaked through the partially polarized window, giving the one-room doss a
-dull, tired illumination that perfectly suited my mood. I considered turning on a light, then decided against it. I
-could find the bed even in the dark, and that's all I really wanted to do. For one fleeting moment I thought
-about food. My stomach felt like a clenched fist, but even the half-minute it would take to flash one of the
-packs of Soyamenu stashed in the freezer would mean a half-minute I wasn't sleeping. Easy decision. I sat
-on the edge of the bed, pulled off my boots, and flopped back, still fully clothed. I swear I was falling asleep
-even before my head hit the pillow.
-I was drifting through a warm, drowsy haze when the door chimed. Probably one of my neighbors,
-making a courtesy call. "Frag off and die!" I shouted in my best neighborly, courteous manner.
+# INCLUDE ./functions.ink
 
-The slag at the door didn't take my subtle hint. The chime sounded again. With another neighborly
-curse, I flailed around on the bedside table, creating minor havoc until I found the remote control. Thumbing
-a button, I opened one eye to look at the telecom screen.
-The tiny security camera hidden in the wall above the door-courtesy of a chummer of mine-picked up
-the image of my visitor and splashed it onto the screen. I opened my other eye for a better look.
-Even foreshortened by the camera angle, the visitor was definitely worth the additional effort. Tall and
-slim-just under a meter-eight, I judged-with short, straight coppery hair. From this perspective, it was hard
-to make out features, but the camera's angle of vision showed me the chrome-edged datajack I might not
-have immediately spotted otherwise. Her clothes weren't quite haute couture, but they were certainly a cut
-above anything seen on the street of southwest Auburn, particularly after the sun goes down. The tailored
-gray synthleather suit enhanced rather than concealed the arresting curves of her figure, but-considering the
-place and time-I'd have bet that jacket was as armored as it was stylish. Mid-level corp, I tagged her. But
-the look of her clothes told me she wasn't in working-class Auburn for the rush of putting her pretty body
-on the line-that foolish game some people called "sprawling." No, for that her outfit would have been newer
-but would have looked older.
-I hit another button on the remote. "Yeah, whaddaya want?" I growled.
-The redhead jumped at the sound of my voice, then glanced around for the speaker. Her cool gray
-eyes scanned the area around the door, seeming to pick out the camera's location almost immediately.
-(Interesting, I thought. You have to know something about tech to pick out my toys.)
+-> chapter_1
+=== chapter_1 ===
+
+If this thing could be said to have started anywhere, I suppose it started with a woman with a gun.
+
+It had been one of those days. I was scragged to the bone, so tired I could barely keep my eyes open as I climbed the two flights of stairs to my doss in the La Jolla Apartments. (Don't be fooled. The name may be fancy, but that's about all that can make the claim on D Street in Auburn.) 
+
+Assorted lacerations and abrasions about my neck and chest were making their presence felt, and a nasty contusion on my left thigh-where my armored duster had just barely stopped a small-caliber round-throbbed dully. On the bright side, the certified credstick in my pants pocket bulged with nuyen and was like a comfortable warmth. I could never be sure when dealing with Anwar the fixer, but this time he had paid my fee in full.
+
+    * [Head upstairs] -> apartment_corridor
+
+== apartment_corridor
+
+I was glad to see that the corridor leading to my door was empty. Security at the La Jolla is a laugh when it comes to keeping out serious trouble, but it's generally enough to keep out the gutterpunks and chippies. Just as well, too. Scragged as I was, I wouldn't have been much good at persuading some half-drowned squatter to step aside. Reaching my door, I thumbed the lock, then stepped inside with a sigh. 
+
+The message light on my telecom was flashing, the sequence indicating the number of calls that had come in. I gave up counting at nine. What could I expect after being out of the sprawl for almost five days? For a while I'd had a portable phone, but I'd quit carrying it when the damn thing went off during a surveillance job. I'd forgotten to disable the buzzer, and almost got my head blown off. Right now I wasn't in any drekking mood to deal with phone messages, but, it was possible one of the calls might be related to a case I was working on. Even better, there might be an offer to take on a new case.
+
+Case. Why not use the word most people would for what I do? Shadowrun.
+
+    * [What's the difference?] -> about_derek
+
+== about_derek
+To me, there's a difference, that's why. Other people might not recognize it, but the distinction matters to me. Circumstances may have forced me to edge my way into the shadows, but I emphatically do not consider myself a shadowrunner. A shadowrunner will usually take on any kind of operation he's physically able to handle: extraction, datasteal, lift-out, transport, muscle, even-in some cases-out-and-out wetwork.
+
+Me, I'm selective. I'll do surveillance, I'll do recovery, I'll even do close-cover if I figure the body I'm guarding is worth keeping alive. But I've got to know the why before I'll take any job, and the reason has to make at least a bit of sense to me. The world's a dark place, full of people who either enjoy making it darker or else don't give a frag if that's how it works out. I'm not so dense as to believe I can reverse that trend all by my lonesome, but I sure as drek can decide not to make it any worse. And even if I did want to make it worse, hell, I'd have too much competition.
+
+Remember about twelve years back that revival of old - I mean old - pre-simsense, "hard-boiled" detective fiction? It was real period stuff, set maybe a century ago, but it seemed to really click with some people. If I'd been in business in those old days, I'd probably have had a license, an office - maybe with my name on the frosted glass door, "Derek Montgomery, Investigations" - and a gun. Now? No license, and my office is wherever I happen to be at the time. I've got the gun, though.
+
+    * [Yeah, but so does everybody else.] -> life_and_death_in_the_awakened_world
+
+== life_and_death_in_the_awakened_world
+The throbbing in my left thigh reminded me that, unfortunately, so does everybody else. And too many people aren't afraid to use that firepower, no matter how small the provocation. Take today, for example. The guy who shot me wasn't even involved with the case I was working. He was just some wireheaded kid who'd slotted one too many "Slade the Sniper" chips and decided to unload his Streetline Special into a crowd of pedestrians. I just happened to be in the wrong place at the wrong time. The kid's luck wasn't any better. Very calmly, very professionally, the guy beside me handled the situation by sending a magical fireball back along the line of fire and cooking the kid where he stood. Then the mage just as calmly moved off down an alley, and that was that. Such is life (and death) in the Awakened world.
+
+Well, at least I could turn my back on all that for the next twelve hours. Even better, I wouldn't have to worry about people pointing guns at me. And if they did, I'd be too sound asleep to know it. I kicked the door shut, made sure the maglock was engaged, and hung my duster on a hook in the corner. The drab wash of the rainy Auburn twilight leaked through the partially polarized window, giving the one-room doss a dull, tired illumination that perfectly suited my mood. I considered turning on a light, then decided against it. I could find the bed even in the dark, and that's all I really wanted to do. 
+
+    * [Hmm. Food?] -> think_about_food
+    * [Head for bed.] -> meet_jocasta_start
+
+== think_about_food
+For one fleeting moment I thought about food. My stomach felt like a clenched fist, but even the half-minute it would take to flash one of the packs of Soyamenu stashed in the freezer would mean a half-minute I wasn't sleeping.
+
+    * [Head for bed.] Easy decision. I sat on the edge of the bed, pulled off my boots, and flopped back, still fully clothed. I swear I was falling asleep even before my head hit the pillow. -> meet_jocasta_start
+
+== meet_jocasta_start
+I was drifting through a warm, drowsy haze when the door chimed. Probably one of my neighbors, making a courtesy call. 
+
+    * [Ask them to come back later] "Frag off and die!" I shouted in my best neighborly, courteous manner. The slag at the door didn't take my subtle hint. The chime sounded again. -> meet_jocasta_start
+
+    * [Check the security camera] With another neighborly curse, I flailed around on the bedside table, creating minor havoc until I found the remote control. Thumbing a button, I opened one eye to look at the telecom screen. -> security_camera_glance
+
+== security_camera_glance
+The tiny security camera hidden in the wall above the door-courtesy of a chummer of mine-picked up the image of my visitor and splashed it onto the screen. I opened my other eye for a better look. 
+
+    * [Features] Even foreshortened by the camera angle, the visitor was definitely worth the additional effort. Tall and slim-just under a meter-eight, I judged-with short, straight coppery hair. From this perspective, it was hard to make out features, but the camera's angle of vision showed me the chrome-edged datajack I might not have immediately spotted otherwise. -> security_camera_glance
+
+    * [Clothing] Her clothes weren't quite haute couture, but they were certainly a cut above anything seen on the street of southwest Auburn, particularly after the sun goes down. The tailored gray synthleather suit enhanced rather than concealed the arresting curves of her figure, but-considering the place and time-I'd have bet that jacket was as armored as it was stylish. Mid-level corp, I tagged her. But the look of her clothes told me she wasn't in working-class Auburn for the rush of putting her pretty body on the line-that foolish game some people called "sprawling." No, for that her outfit would have been newer but would have looked older. -> security_camera_glance
+
+    * [Ask what she wants] I hit another button on the remote. "Yeah, whaddaya want?" I growled. -> jocasta_startled
+
+== jocasta_startled
+The redhead jumped at the sound of my voice, then glanced around for the speaker. Her cool gray eyes scanned the area around the door, seeming to pick out the camera's location almost immediately. (Interesting, I thought. You have to know something about tech to pick out my toys.)
+
 "Derek Montgomery?" she inquired. Her voice was low and smooth, but with a touch of nervous edge.
+
 I wondered what it would be like to hear her say my name without that edge.
+
 "What do you want?" I repeated, enunciating a little better.
+
 I knew she couldn't see me, but I had the strange sensation those eyes were fixed on mine. "I want to
-talk to you," she said levelly. "It's important. It's. .." She hesitated.
-"... A matter of life and death?" I finished for her. If she noticed the irony in my voice, she gave no
-sign. "Yes," she shot back. "Yes, that's just what it is."
-I gave her one final scan. Her clothes said money, her manner said money. When you do what I do,
-the problem isn't finding people who want your services. It's finding people who can pay for your services.
-"Yeah, well, maybe," I grumbled. "And just who are you?"
-I expected some kind of street handle, but she surprised me. "My name is Jocasta Yzerman," she said
-matter-of-factly. "All right," I told her, "give me a tick." I keyed up the lights, killed the security camera, and
+talk to you," she said levelly. "It's important. It's. .." She hesitated. 
+
+- (jocasta_introduction_loop_a)
+    * (life_and_death) ["A matter of life and death?"] "... A matter of life and death?" I finished for her. If she noticed the irony in my voice, she gave no sign. "Yes," she shot back. "Yes, that's just what it is." -> jocasta_introduction_loop_a
+    * (learn_jocastas_name) [Who are you?] "And just who are you?" I expected some kind of street handle, but she surprised me. "My name is Jocasta Yzerman," she said matter-of-factly. 
+    * [Give her one last look] I gave her one final scan. Her clothes said money, her manner said money. When you do what I do, the problem isn't finding people who want your services. It's finding people who can pay for your services. "Yeah, well, maybe," I grumbled. -> jocasta_introduction_loop_a
+    * [Let her in] -> let_jocasta_in
+
+== let_jocasta_in 
+"All right," I told her, "give me a tick." I keyed up the lights, killed the security camera, and
 clambered out of bed. Checking the mirror, I saw that my eyes were bloodshot and my clothes looked like
 I'd slept in them- no surprise there. I raked fingers through my hair, rumpling one side to erase the flat spot
 made by the pillow. Then I crossed to the door and swung it open.
+
 "Come on in," I said, stepping out of her way.
+
 In the flesh my visitor looked even better than on the screen. The thin, tight line of her mouth said she
 was obviously distressed about something, but I liked imagining how those lips would look in a smile.
 Stepping inside, she didn't spare my place even a quick glance. Just as I'd figured, she was business, all
 business.
-"Grab a seat," I told her, shutting the door and double-checking the maglock. Then I turned back to
-her, giving Jocasta Yzerman my best professional poker face.
+
+    * [Offer her a chair] "Grab a seat," I told her, shutting the door and double-checking the maglock. Then I turned back to her, giving {jocasta_introduction_loop_a.learn_jocastas_name:Jocasta Yzerman|her} my best professional poker face. -> jocasta_pulls_a_gun
+
+== jocasta_pulls_a_gun
 She was standing, almost quiveringly alert, in the middle of the room. But after the first millisecond I
 didn't even notice her bearing. That was because all my attention was focused on the weapon that had
 sprung into existence in her left hand.
-Officially, the Colt America L36 is classed as a light pistol, barely one step up from a holdout: five mil,
-with an eight-centimeter barrel. But even the lightest pistol seems to have a bore like a subway tunnel when
-you're looking down the business end of one. From the way the barrel-top laser sight flared in my vision, I
-knew its ruby-red targeting point was centered between my eyes.
-I gauged the distance between us. A couple of meters. If I tried to go for her gun, I'd almost make it
-before she got off a shot. It would be real close, but close only counts in horseshoes, hand grenades, and
-dancing. So instead I showed her my empty hands, forced a disarming smile onto my face, and put on my
-best let's-keep-calm-here tone of voice.
-"Hey, let's keep calm here," I said somewhat lamely. "If there's a problem, we can talk about it and-"
-She cut me off, her voice cold as steel. "You killed my sister," she announced.
-"And now you're going to kill me? Makes perfect sense."
-Again, she missed the irony. "That's right," she said. "You killed Lolita."
-"Lolita.. ." That's when it hit me. It must have been my general grogginess that kept me from realizing
 
-her surname was familiar. Lolita Yzerman, a name from the past. We'd met a few years back when I'd
-helped her out of a real bad spot. It wasn't long before we got something hot and heavy going, but then
-Lolita iced me out of her life, probably figuring a chummer like me wasn't what you'd call an asset for a
-smart, ambitious girl like her. It had been, frag, almost a year since we'd spoken.
+    - (loop)
+        * [The Gun] Officially, the Colt America L36 is classed as a light pistol, barely one step up from a holdout: five mil, with an eight-centimeter barrel. But even the lightest pistol seems to have a bore like a subway tunnel when you're looking down the business end of one. From the way the barrel-top laser sight flared in my vision, I knew its ruby-red targeting point was centered between my eyes. -> loop
+
+        * [Gauge the distance] I gauged the distance between us. A couple of meters. If I tried to go for her gun, I'd almost make it before she got off a shot. It would be real close, but close only counts in horseshoes, hand grenades, and dancing. -> loop
+
+        * ["Lets keep calm"] I showed her my empty hands, forced a disarming smile onto my face, and put on my best let's-keep-calm-here tone of voice.
+        "Hey, let's keep calm here," I said somewhat lamely. "If there's a problem, we can talk about it and-"
+        She cut me off, her voice cold as steel. "You killed my sister," she announced.
+            ** ["And now you're going to kill me?"] "And now you're going to kill me? Makes perfect sense."
+            Again, she missed the irony. "That's right," she said. "You killed Lolita."
+            ** ["Lolita.. ."] That's when it hit me. It must have been my general grogginess that kept me from realizing her surname was familiar. Lolita Yzerman, a name from the past. -> lolita_aside 
+            
+== lolita_aside            
+We'd met a few years back when I'd helped her out of a real bad spot. It wasn't long before we got something hot and heavy going, but then Lolita iced me out of her life, probably figuring a chummer like me wasn't what you'd call an asset for a smart, ambitious girl like her. It had been, frag, almost a year since we'd spoken.
+
 And now she was dead. Little Lolly, of the bubbly laugh and big blue eyes.
-"That's right-Lolita," said Jocasta Yzerman, jolting me back to the present. "I'm glad you remember her
-name."
-It was my turn to ignore the irony. "Hey, look," I told her, "I know Lolita... knew her, we had a thing
-going. You probably know that. But the last time I talked to her, the last time I saw her, was sometime
-early last year. I didn't kill your sister. Why would I?"
-As I spoke, I watched her eyes. You can learn a lot from somebody's eyes. If nothing else, you can
-sometimes tell when they're about to pull the trigger. There was a shadow of ... something ... in Jocasta's
-gray eyes. It wasn't quite doubt, but it was enough to give me hope. No matter how steady she held that
-gun, her eyes told me she didn't really want to use it, not deep down. She'd steeled herself to this point, and
-she could probably steel herself enough to actually pull the trigger. But she didn't want to. She wanted to
-find some reason not to take my life. And that was a desire I could fully support.
-"You had your reasons," she said. "What reasons?" I asked, spreading my hands and taking a slow
-step backward. Noticing the move, Jocasta did the natural thing in response: she took a couple of steps
-forward. The distance between us was a little less. Not much, but it was a step in the right direction. "What
-reasons?" I repeated.
-"To get out from under," Jocasta said coldly. "It was the only way to stop her from blackmailing you."
-I stared at her. Blackmail... Sure, from what I'd seen of Lolly, she was capable of trying to carry off
-blackmail if the stakes were high enough. But I was safe. She hadn't known enough about me.
-"Believe me," I said, becoming sincerity personified, "Lolly couldn't blackmail me because she had
-nothing on me." Again I stepped back, again Jocasta stepped forward. This time the little gavotte cut the
-distance between us to slightly less than two meters.
-And not a moment too soon, for something changed in her eyes. When she spoke, her voice was
-sharper, more strained. She was working up her anger so that she'd be able to pull the trigger. "You're
-lying," she snapped. "You're a liar and a murderer. You did something bad and my sister knew about it, so
-you killed her. You killed my sister." She was crying now, almost hysterical.
-Her finger tightened on the trigger. "Die, you motherfragger."
-In that instant, I moved. I pivoted sideways, my torso and head swinging down and to the left, my right
-foot scything up and around. Just in time. Jocasta's silenced pistol coughed, the bullet making a whipcrack
-as it split the air terrifyingly close to my head, then shattered something behind me. My right foot swung on
-through, slamming into the inside of the woman's wrist. A perfect scythe-kick disarm. That kick would have
-made my instructors at Lone Star proud, though they'd probably have been sorry her bullet hadn't
-connected.
-The charge of adrenalin must have fired me up a little more than usual. Coming around with the force
-of my momentum, I saw that the kick had done more than take her gun offline and break her grip. I'd
-literally kicked the woman off her feet. She lay huddled on the floor, whimpering, clutching her quite
-possibly broken right wrist to her belly.
-I hesitated. It wasn't that I thought she was faking it, the impact had been hard enough to hurt my foot,
-even through the adrenalin. It was my emotions that were slotting me up. Part of me was glad to see my
-would-be murderer injured, at least to some minor degree. Had I not reacted, her little bullet would have
-splashed the thinking part of Derek Montgomery all over my apartment wall. Another part of me, though,
-saw a woman in pain, and
-I reacted in the predictable manner. She hadn't wanted to kill me. It was something she thought she
-had to do, something she had to work herself up to, and something that probably would have fragged up the
-rest of her life with guilt. I picked up her gun and slipped it into the waistband of my trousers. Then I knelt
-beside her.
-Jocasta was curled up in fetal position, her slender shoulders shaking with the deep sobs racking her
-throat. I paused before tentatively reaching out to lay a hand gently on her back, taking care to make the
-gesture as non-sexual as possible. (That was a further complexity I just didn't want to get into.) She didn't
-shy away from my touch, but I could feel the muscles of her back tighten as though she might somehow
-pull her skin away from a loathsome contact.
-I sighed. Okay, if that's the way she wanted it. I stood up, pulled the gun from my waistband, and
-placed it on a table within easy reach. Then I sat down in the apartment's only chair. Depending on how
 
-tough she was, it might be a while before Jocasta could pull herself together. Might as well be comfortable
-while I waited. I triggered the massage system, another toy courtesy of the chummer who'd done my
-security camera, then settled back into the armchair's warm embrace. And I watched.
-It didn't take her long at all. Mentally tough, this Jocasta Yzerman. Knowing her sister, that shouldn't
-have surprised me. First the sobs stopped, then the shaking. Then, slowly, she unwound from her fetal ball.
-When I could see her face again, it seemed unmarked by a single tear nor were her eyes even red or puffy.
-I glanced down at her right wrist, and felt like a slotting bastard. It was already swollen and starting to
-discolor, though I didn't think it was broken. She seemed to pay it no mind as she rose to her feet, as though
-the pain wasn't worthy of her notice.
-I watched her, fascinated. There was a grace, a kind of poise, to her movements that she hadn't
-shown before. It was as if her homicidal mission, however unsuccessful, had freed her in some way. Her
-eyes were steady on my face. They didn't show hatred, they didn't show fear. If anything, they showed
-resignation, almost fatalism. Her face was calm, any calmer and I'd have declared her dead.
-"I'm sorry," she said quietly, not a trace of emotion in that voice. "I'll go now."
-I was out of the chair before she'd taken a step. I reached out to grasp her shoulder, but pulled my
-hand back at the last moment. I'd seen emotional control before, and I'd seen what happens when it cracks.
-I didn't want to do anything to trigger that. Instead, I only stretched an arm out across her path like a gate.
-"No," I told her, "don't go."
+"That's right - Lolita," said Jocasta Yzerman, jolting me back to the present. "I'm glad you remember her name."
+
+It was my turn to ignore the irony. 
+
+I watched her eyes. You can learn a lot from somebody's eyes. If nothing else, you can
+sometimes tell when they're about to pull the trigger. There was a shadow of ...something... in Jocasta's
+gray eyes. It wasn't quite doubt, but it was enough to give me hope. No matter how steady she held that
+gun, her eyes told me she didn't really want to use it, not deep down.
+
+ - (lolita_killer) 
+    * (i_knew_her) ["I know Lolita"] "Hey, look," I told her, "I know Lolita... knew her, we had a thing going. You probably know that. But the last time I talked to her, the last time I saw her, was sometime early last year. -> lolita_killer
+    * (last_year) ["Why would I kill her?"] -> didnt_kill_lolita
+
+== didnt_kill_lolita
+"I didn't kill your sister. Why would I?" I said, as calmly as I could.
+
+She'd steeled herself to this point, and she could probably steel herself enough to actually pull the trigger. But she didn't want to. She wanted to find some reason not to take my life. And that was a desire I could fully support.
+
+"You had your reasons," she said. 
+
+    * [Take a step back] "What reasons?" I asked, spreading my hands and taking a slow step backward. Noticing the move, Jocasta did the natural thing in response: she took a couple of steps forward. The distance between us was a little less. Not much, but it was a step in the right direction. "What reasons?" I repeated. -> get_out_from_under
+
+== get_out_from_under
+
+"To get out from under," Jocasta said coldly. "It was the only way to stop her from blackmailing you."
+
+I stared at her. Blackmail... Sure, from what I'd seen of Lolly, she was capable of trying to carry off blackmail if the stakes were high enough. But I was safe. She hadn't known enough about me.
+
+    - (loop) 
+        * ["Believe me..."] "Believe me," I said, becoming sincerity personified, "Lolly couldn't blackmail me because she had nothing on me." -> loop
+        * [Take another step back] Again I stepped back, again Jocasta stepped forward. This time the little gavotte cut the distance between us to slightly less than two meters. -> jocasta_is_losing_it
+
+== jocasta_is_losing_it 
+Something changed in her eyes. When she spoke, her voice was sharper, more strained. She was working up her anger so that she'd be able to pull the trigger. "You're lying," she snapped. "You're a liar and a murderer. You did something bad and my sister knew about it, so you killed her. You killed my sister." She was crying now, almost hysterical.
+
+Her finger tightened on the trigger. "Die, you motherfragger."
+
+    * [Lunge forward] -> jocasta_shoots_dirk
+    * [Scythe Kick] -> dirk_disarms_jocasta
+    * [Try to defuse] -> jocasta_kills_dirk
+
+== dirk_disarms_jocasta
+In that instant, I moved. I pivoted sideways, my torso and head swinging down and to the left, my right foot scything up and around. Just in time. Jocasta's silenced pistol coughed, the bullet making a whipcrack as it split the air terrifyingly close to my head, then shattered something behind me. My right foot swung on through, slamming into the inside of the woman's wrist. A perfect scythe-kick disarm. That kick would have made my instructors at Lone Star proud, though they'd probably have been sorry her bullet hadn't connected. -> jocasta_kick_aftermath
+
+== jocasta_shoots_dirk 
+As I flung myself forward, Jocasta didn't miss a beat.  The Colt pistol coughed, and the bullet hit me directly in my chest, just above my pectoral muscle. In any other situation, Dirk would have been wearing his armored duster and had not much more than a throbbing bruse, but in my haste to get some sleep and general grogginess from the buzzer, I hadn't armored up beforehand. Frag. 
+
+As I came to realize what had happened, Jocasta bolted.  I let out a lame "motherfragger" before collapsing to the floor, struggling to breathe. I didn't have a Docwagon contract, and I was in trouble.  The blood began to pool around my boots.  My eyes grew heavy, and I stubbornly attempted to go after Jocasta, but the only thing I was capable of doing was ripping off a shelf of synthahol from the wall as I plummed to the floor. 
+
+-> END
+
+== jocasta_kills_dirk 
+"Please, don't shoot.  I didn't -" the silenced Colt pistol spat mid-sentence, laser sight directly on Dirk's temple. He slumped backwards and destroyed a collection of empty bottles on the shelf now covered with Dirk's brain matter and bone. 
+
+Jocasta stood, frozen in the moment.  Her gun began to tremble as the last whisp of smoke danced from the barrel. Her hand crept toward her mouth, muffling a scream that wouldn't come.  She tried to take a step toward the door and hesitated, as though she should call for help but considering the state of Lolita's killer, it wouldn't have mattered. She walked to the door, shuffled into the corridor, and into the wash of amber Auburn sunrise. 
+
+-> END 
+
+== jocasta_kick_aftermath
+The charge of adrenalin must have fired me up a little more than usual. Coming around with the force of my momentum, I saw that the kick had done more than take her gun offline and break her grip. I'd literally kicked the woman off her feet. She lay huddled on the floor, whimpering, clutching her quite possibly broken right wrist to her belly.
+ 
+ - (loop) 
+    * [Kneel down beside her] I hesitated. It wasn't that I thought she was faking it, the impact had been hard enough to hurt my foot, even through the adrenalin. It was my emotions that were slotting me up. Part of me was glad to see my would-be murderer injured, at least to some minor degree. Had I not reacted, her little bullet would have splashed the thinking part of Derek Montgomery all over my apartment wall. Another part of me, though, saw a woman in pain, and I reacted in the predictable manner. She hadn't wanted to kill me. It was something she thought she had to do, something she had to work herself up to, and something that probably would have fragged up the rest of her life with guilt. -> loop
+    * (get_the_gun) [Pick up the gun] I picked up her gun and slipped it into the waistband of my trousers. -> loop
+    * [Kneel down] -> jocsta_recovery_a
+
+== jocasta_recovery_a
+Jocasta was curled up in fetal position, her slender shoulders shaking with the deep sobs racking her throat. I paused before tentatively reaching out to lay a hand gently on her back, taking care to make the gesture as non-sexual as possible. (That was a further complexity I just didn't want to get into.) She didn't shy away from my touch, but I could feel the muscles of her back tighten as though she might somehow pull her skin away from a loathsome contact. I sighed. 
+
+Okay, if that's the way she wanted it. I stood up, pulled the gun from my waistband, and placed it on a table within easy reach. Then I sat down in the apartment's only chair. 
+
+Depending on how tough she was, it might be a while before Jocasta could pull herself together. Might as well be comfortable while I waited. I triggered the massage system, another toy courtesy of the chummer who'd done my security camera, then settled back into the armchair's warm embrace. And I watched. It didn't take her long at all. 
+
+Mentally tough, this Jocasta Yzerman. Knowing her sister, that shouldn't have surprised me. First the sobs stopped, then the shaking. Then, slowly, she unwound from her fetal ball.
+    - (loop) 
+        * [Her face] When I could see her face again, it seemed unmarked by a single tear nor were her eyes even red or puffy. -> loop
+        * [Her Wrist?] I glanced down at her right wrist, and felt like a slotting bastard. It was already swollen and starting to discolor, though I didn't think it was broken. -> loop 
+        * [Wait for her to get up] I watched her, fascinated. There was a grace, a kind of poise, to her movements that she hadn't shown before. It was as if her homicidal mission, however unsuccessful, had freed her in some way. Her eyes were steady on my face. They didn't show hatred, they didn't show fear. If anything, they showed resignation, almost fatalism. Her face was calm, any calmer and I'd have declared her dead. -> jocasta_wants_to_leave
+
+== jocasta_wants_to_leave
+"I'm sorry," she said quietly, not a trace of emotion in that voice. "I'll go now." 
+I was out of the chair before she'd taken a step.
+
+    - (loop) 
+        * [Reach for her shoulder]  I reached out to grasp her shoulder, but pulled my hand back at the last moment. I'd seen emotional control before, and I'd seen what happens when it cracks. I didn't want to do anything to trigger that. -> loop
+        * [Block the doorway] I stretched an arm out across her path like a gate. "No," I told her, "don't go." -> jocasta_arm_bar
+
+
+== jocasta_arm_bar
 She looked up into my eyes. "Why not?" Again, not a hint of anything in her voice, not even curiosity.
 Which was ironic, because curiosity was exactly what was consuming me at the moment. There were
 some things about this whole slotting mess that I'd better know. I needed a better answer for the lady,
 though.
-I tried to keep it light. "Oh, I don't know," I temporized. "Call it misplaced hospitality, but I don't feel
-right if somebody comes over and tries to shoot me, then leaves before I can even offer her a drink."
-The response was just what I'd expected: a whole lot of nothing. At least she'd stopped walking for
-the door. I hesitated a moment, then grasped her shoulder. Gently, and very slowly I turned her around. I
-felt that muscle-tension reaction again, but her visible control didn't crack. I gave her a soft push toward my
-chair. "Go on," I told her. "Have a seat. I'd like to talk." She walked smoothly in the direction I'd pushed her.
-The grace was still there, but it had a kind of mindless-ness now. Her brain was in full control of her body,
-but that control was below conscious level, like an autopilot. It was like a waking form of sleep-walking.
+    - (loop) 
+        * [Keep it light] "Oh, I don't know," I temporized. "Call it misplaced hospitality, but I don't feel right if somebody comes over and tries to shoot me, then leaves before I can even offer her a drink." The response was just what I'd expected: a whole lot of nothing. At least she'd stopped walking for the door. -> loop
+        * [Offer her a chair] I hesitated a moment, then grasped her shoulder. Gently, and very slowly I turned her around. I felt that muscle-tension reaction again, but her visible control didn't crack. I gave her a soft push toward my chair. "Go on," I told her. "Have a seat. I'd like to talk." -> lets_talk
+
+== lets_talk
+She walked smoothly in the direction I'd pushed her.
+
+The grace was still there, but it had a kind of mindless-ness now. Her brain was in full control of her body, but that control was below conscious level, like an autopilot. It was like a waking form of sleep-walking.
+
 She turned and plopped down into the chair.
+
 That got a reaction out of her. I'd neglected to turn off the massage system, and it was still running
 full-blast. As her back and bottom touched the chair, I saw all her muscles spasm, and she virtually levitated
 a couple of centimeters above the seat. Then gravity reasserted itself, and she fell back into the chair's
 embrace. This time she didn't fight it. Her whole body seemed to go limp, and her eyelids drooped to
-half-mast, Her eyes were still on me, though. I watched her for a few moments, then went to sit down on
-the edge of my bed. "I'm sorry about Lolly," I told her quietly.
-Again, no response. I sighed. I'd seen people strapped up this tight before. Usually they'd come out of
-it on their own by suddenly cracking-sometimes at the worst possible moment. A few, though, would never
-let themselves go. Jocasta had broken down, just for a few minutes, lying on my floor. That had been
-cathartic, but it obviously wasn't enough. The fact that it had happened at all gave me some hope that she
-could go all the way. All she needed was the right kind of push.
-Why am I even thinking this? I asked myself again. It wasn't my problem. It was she who'd decided to
-kill me, and she could fragging well live with the consequences of that decision. I should just leave her to it,
-and to hell with Jocasta Yzerman. But, for various reasons, that wasn't acceptable.
-I'm no idealist, an idealist couldn't last very long in the world of 2052. In fact, I'm as cold and hard as
-the next man when necessary. But that doesn't mean I feel good about turning my back on a situation
-where 1 might be able to help. There was another reason, too, of course. I'd known Lolita Yzerman. I think
-I might even have loved her. Now she was dead. It was too late to help Lolly, but I could help her sister
-Jocasta.
-"Do you have a picture of Lolly?" I asked softly. Jocasta nodded. She reached into her pocket and
-brought out a palm-sized holo. She reached out to hand it to me. "Uh-uh," I told her, shaking my head. "You
-look at it."
-She hesitated, perhaps realizing what I was doing, but then she did as I told her. She stared at the holo
-for a moment before her face began to twist with grief. The holo dropped from suddenly nerveless fingers.
-With a soft keening sound, she slumped down and forward in the chair. Her forehead was touching her
-knees and she was gripping the sides of her head as if to keep her skull from exploding. Once again, her
+half-mast, Her eyes were still on me, though. 
 
-body was racked with gasping sobs.
-I turned away, a little embarrassed. Not wanting to intrude further on the grief of this weeping woman,
-I picked up the forgotten picture.
--> chapter_2
+ * [I'm sorry about Lolly...] I watched her for a few moments, then went to sit down on the edge of my bed. "I'm sorry about Lolly," I told her quietly. -> sorry_about_lolita
 
-=== chapter_2
+== sorry_about_lolita
+Again, no response. I sighed. I'd seen people strapped up this tight before. Usually they'd come out of it on their own by suddenly cracking-sometimes at the worst possible moment. A few, though, would never let themselves go. Jocasta had broken down, just for a few minutes, lying on my floor. That had been cathartic, but it obviously wasn't enough. The fact that it had happened at all gave me some hope that she could go all the way. All she needed was the right kind of push.
+
+* [Why am I even thinking this?!] It wasn't my problem. It was she who'd decided to kill me, and she could fragging well live with the consequences of that decision. I should just leave her to it, and to hell with Jocasta Yzerman. But, for various reasons, that wasn't acceptable. I'm no idealist, an idealist couldn't last very long in the world of 2052. In fact, I'm as cold and hard as the next man when necessary. But that doesn't mean I feel good about turning my back on a situation where 1 might be able to help. There was another reason, too, of course. I'd known Lolita Yzerman. I think I might even have loved her. Now she was dead. It was too late to help Lolly, but I could help her sister Jocasta. -> picture_of_lolly
+
+== picture_of_lolly 
+"Do you have a picture of Lolly?" I asked softly. Jocasta nodded. She reached into her pocket and brought out a palm-sized holo. She reached out to hand it to me. "nuh-uh," I told her, shaking my head. "You look at it."
+
+She hesitated, perhaps realizing what I was doing, but then she did as I told her. She stared at the holo for a moment before her face began to twist with grief. The holo dropped from suddenly nerveless fingers. With a soft keening sound, she slumped down and forward in the chair. Her forehead was touching her knees and she was gripping the sides of her head as if to keep her skull from exploding. Once again, her body was racked with gasping sobs. I turned away, a little embarrassed. Not wanting to intrude further on the grief of this weeping woman,
+
+* [Pick up the holo] I picked up the forgotten picture. -> chapter_2
+
+=== chapter_2 ==
+
 Lolita Yzerman. The holo was obviously an amateur job, slightly out of focus and the perspective a bit off. But it was good enough. It was unmistakably Lolly who smiled out from the holo.
-On the surface, Lolly and Jocasta did not show a striking family resemblance. Jocasta was tall, where
-Lolly was short, with wavy blonde hair and bright blue eyes. And Jocasta was slender, somewhat sharp and
-austere, where Lolly was attractively rounded in all the right places. Looking closer, though, I could see the
-resemblance. The same cheekbones. The same mouth-a little small for the face, with good teeth. And, of
-course, both had datajacks high on their right temples.
-Lolly Yzerman. She'd told me a little of her story. I hadn't automatically believed all of it, but some
-parts had the unmistakable ring of truth. Her father, David Yzerman, had been a big-rep freelance
-computer designer. Lolly's own brilliance in math and science had shown up early, so it was only logical that
-she follow in her father's footsteps. She'd entered the University of Washington's - Computer Sciences
-program at the tender age of fifteen, graduating less than three years later, U-Dub's youngest honor grad. I
-suppose her father had been supplementing her training as well. Even while still a student, Lolly was doing
-hired-gun programming work for a drekload of local outfits, all the while building an extraordinary track
-record. 
-    Predictably, she decided that she needed a datajack to really progress, but her father refused to even consider letting his daughter go under the laser until she was twenty-one. Just as predictably, Lolly didn't give a frag what her father said. She took on a few more contracts to earn enough nuyen, then ran away to get the operation done. She was still only seventeen, I think. Lolly's father had punished her when she returned home, the shiny new jack in place, but Lolly was sure he was secretly very proud. She laughed when telling me about it. 
 
-    The contracts kept coming from all over: Matrix programming, system analysis, hardware design and maybe even a few shadowy Matrix runs, but she never talked about that. Until now a generalist, Lolly began to specialize. She'd always loved solving puzzles, she'd told me, and soon she found her niche in signal-enhancement and "washing." Washing was the half-art, half-science of picking out the true signal from background noise, and then cleaning it of distortion. Her goal had always been to work for UCASSA-the UCAS Space Agency-enhancing signals from deep-space probes, improving the signal-to-noise, or S/N, ratio. But she was still young, and would need to gather more experience before she could get the job she wanted. And that was why she signed on with Avatar Security Technologies, one of the Lone Star subsidiaries-to get experience.
-Lone Star needs signal-enhancement specialists, too, but for a very different reason than UCASSA.
-When Lone Star conducts an investigation, standard procedure is to tap the telecoms of everyone even
-peripherally involved with the subject of the investigation. That's right, everyone, whether or not he or she
-is suspected of a crime. An infringement of personal rights? Morally and ethically speaking, you've got it,
-chummer. But according to the letter of the law, if not the spirit, it's kosher. As long, that is, as Lone Star
-notifies everyone whose line has been tapped... within four months of the tap's removal. But can't Lone
-Star get around that restriction by leaving the tap in place forever? Again, you've got it, chummer. Lone
-Star officers are notoriously absent-minded when it comes to notification.
-Anyway, somebody has to handle all the data that comes out of the tap. In Seattle, that somebody is
-Avatar, and that's where Lolly ended up. Taps and bugs are notoriously noisy. The signals get fragged up
-by all the electronic drek just about everybody's got at home these days, and the S/N ration is fragging
-awful. Sure, contemporary signal-enhancement software and automatic filtering algorithms are
-sophisticated and wiz, but sometimes they're just not wiz enough. What's needed is that indefinable
-something, that purely human artistry that some people seem born with. Lolly was one of those people, and
-the signal-washing job might well have been created especially for her. She told me that she never listened
-to the contents of the taps. She didn't give a frag about what the subjects were saying. The only thing that
-mattered was tweaking the data stream to give that last boost to the S/N ratio.
-That's how Lolly and I met. It was while doing some shadowy work for a Lone Star employee that I
-found out, purely by accident, that little Lolly had gotten herself into deep drek. Seems that Lolly, who was
-only twenty at the time, was involved in some Machiavellian political infighting, with her blackmailing some
-guy who was trying to block her advancement because she'd rebuffed his sexual advances. Lolly had
+On the surface, Lolly and Jocasta did not show a striking family resemblance. Jocasta was tall, where Lolly was short, with wavy blonde hair and bright blue eyes. And Jocasta was slender, somewhat sharp and austere, where Lolly was attractively rounded in all the right places. Looking closer, though, I could see the resemblance. The same cheekbones. The same mouth-a little small for the face, with good teeth. And, of course, both had datajacks high on their right temples. -> continue_a
 
-gotten in way over her head. Because of some leverage I'd developed during my own case, I was in the
-perfect position to help her out, which I did, pro bono. When her opponent moved on to another company,
-Lolly was in the clear. Meanwhile we'd slipped into a torrid affair that lasted five exhausting weeks.
-I learned a lot about Lolita Yzerman in that short time. Because of her looks, a lot of people's first
-impression was that Lolly was a bubble-headed blonde, with nothing weightier on her mind than getting a
-blast out of life. Wrong. That was a mask she wore, and it was a good one. If you did manage to see
-through it, however, you found a calculating person, someone ruthless about getting what she wanted. Part
-of me hurt bad when Lolly broke off our relationship, but another part recognized that perhaps it was a
-lucky escape.
-Her tattoos probably said it best. On each ankle was a delicate tattoo that glowed baby-blue under UV
-light. The left one read, "Good girls go to heaven", the right one said, "Bad girls go everywhere." Lolly
-Yzerman went everywhere.
-And now she was dead. I set the holo down and looked over at Jocasta.
-She was starting to pull herself back together. Though she still had her face down on her knees, the
-heaving of her shoulders had stopped. Tough woman. The second break had been bad. Some people might
-not come back from something like that for a couple of months-and then only if they found a good
-head-shrinker.
-I felt the need for a drink. I didn't feel like sleeping anymore-amazing what a laser sight between the
-eyes will do for you-but my brain was leaden with adrenalin hangover. The bar was within easy reach of
-the bed (convenient), so I didn't even have to stand up. I poured myself a good clout of synthahol
-masquerading as scotch, hesitated, then poured a second drink for Jocasta.
-When I turned back, she was sitting upright and gazing steadily at me. Those cool gray eyes were
-clear and focused. Still emotionless, but watchful and fully aware. That last catharsis seemed to have
-straightened her out, at least on the surface. (I wouldn't want to share the dreams she'd probably have,
-though.) Like I said, tough woman. Wordlessly I handed her the drink.
-I watched her hand as she took the glass. Steady, no visible shake at all. She inclined her head
-minutely in what might-just-have been a nod of thanks, and took a sip. She screwed up her face a little at
-the taste, either because she didn't like scotch or because she liked real scotch, but she took another
-mouthful. Then she lowered the glass.
-Her silence and her steady gaze, still fixed on my face, were making me uncomfortable. I took a
-swallow of my own drink, mainly for something to do. Then I asked, "Can you tell me what happened?"
-"Lolita was shot, point-blank, in the face." Her voice wasn't the dead monotone it had been earlier, but
-it was dispassionate, as though describing a downturn in the stock market instead of the murder of her
-sister.' 'It happened in her apartment. The police said she apparently opened the door to someone she knew,
-someone she trusted. And he shot her." Her words said "he," but her eyes were still saying "you"-meaning
-me.
-"How did you connect me?" I pressed. "How did you even know my name?"
-She shrugged slightly. "I'd known about you all along," she said. "Lolita told me about your ...
-involvement." For the first time Jocasta was showing a little discomfort.
-"We had an affair," I told her flatly. "But you also know it lasted less than two months, and we haven't
-been in contact since." "Until she started blackmailing you."
-I sighed. Blackmail again. "For what? And how did you get that idea anyway?"
-"She sent me an e-mail message two days ago, the day before... before she died." Her icy control
-almost slipped there. I found that somehow reassuring. Tough she might be, but she was human.
-"And how did you know where to find me?"
-She looked at me like I was an idiot. "Lolly told me."
-Interesting. As far as I knew, Lolly didn't know where I lived. She had my phone number, sure, but I'd
-moved several times since we'd been together. "Go on about the message," I said.
-"She was scared, and was just starting to realize how dangerous you were. That's why she told me all
-about it."
+== continue_a
+Lolly Yzerman. She'd told me a little of her story. I hadn't automatically believed all of it, but some parts had the unmistakable ring of truth. Her father, David Yzerman, had been a big-rep freelance computer designer. Lolly's own brilliance in math and science had shown up early, so it was only logical that she follow in her father's footsteps. She'd entered the University of Washington's - Computer Sciences program at the tender age of fifteen, graduating less than three years later, U-Dub's youngest honor grad. I suppose her father had been supplementing her training as well. Even while still a student, Lolly was doing hired-gun programming work for a drekload of local outfits, all the while building an extraordinary track record. -> continue_b
+
+== continue_b
+Predictably, she decided that she needed a datajack to really progress, but her father refused to even consider letting his daughter go under the laser until she was twenty-one. Just as predictably, Lolly didn't give a frag what her father said. She took on a few more contracts to earn enough nuyen, then ran away to get the operation done. She was still only seventeen, I think. Lolly's father had punished her when she returned home, the shiny new jack in place, but Lolly was sure he was secretly very proud. She laughed when telling me about it. -> continue_c
+
+== continue_c
+The contracts kept coming from all over: Matrix programming, system analysis, hardware design and maybe even a few shadowy Matrix runs, but she never talked about that. Until now a generalist, Lolly began to specialize. She'd always loved solving puzzles, she'd told me, and soon she found her niche in signal-enhancement and "washing." Washing was the half-art, half-science of picking out the true signal from background noise, and then cleaning it of distortion. Her goal had always been to work for UCASSA-the UCAS Space Agency-enhancing signals from deep-space probes, improving the signal-to-noise, or S/N, ratio. But she was still young, and would need to gather more experience before she could get the job she wanted. And that was why she signed on with Avatar Security Technologies, one of the Lone Star subsidiaries-to get experience. -> continue_d
+
+== continue_d 
+Lone Star needs signal-enhancement specialists, too, but for a very different reason than UCASSA. When Lone Star conducts an investigation, standard procedure is to tap the telecoms of everyone even peripherally involved with the subject of the investigation. That's right, everyone, whether or not he or she is suspected of a crime. An infringement of personal rights? Morally and ethically speaking, you've got it, chummer. But according to the letter of the law, if not the spirit, it's kosher. As long, that is, as Lone Star notifies everyone whose line has been tapped... within four months of the tap's removal. But can't Lone Star get around that restriction by leaving the tap in place forever? Again, you've got it, chummer. Lone Star officers are notoriously absent-minded when it comes to notification. -> continue_e
+
+== continue_e 
+Anyway, somebody has to handle all the data that comes out of the tap. In Seattle, that somebody is Avatar, and that's where Lolly ended up. Taps and bugs are notoriously noisy. The signals get fragged up by all the electronic drek just about everybody's got at home these days, and the S/N ration is fragging awful. Sure, contemporary signal-enhancement software and automatic filtering algorithms are sophisticated and wiz, but sometimes they're just not wiz enough. -> continue_f
+
+== continue_f
+What's needed is that indefinable something, that purely human artistry that some people seem born with. Lolly was one of those people, and the signal-washing job might well have been created especially for her. She told me that she never listened to the contents of the taps. She didn't give a frag about what the subjects were saying. The only thing that mattered was tweaking the data stream to give that last boost to the S/N ratio. That's how Lolly and I met. It was while doing some shadowy work for a Lone Star employee that I found out, purely by accident, that little Lolly had gotten herself into deep drek. Seems that Lolly, who was only twenty at the time, was involved in some Machiavellian political infighting, with her blackmailing some guy who was trying to block her advancement because she'd rebuffed his sexual advances. -> continue_g
+
+== continue_g
+Lolly had gotten in way over her head. Because of some leverage I'd developed during my own case, I was in the perfect position to help her out, which I did, pro bono. When her opponent moved on to another company, Lolly was in the clear. Meanwhile we'd slipped into a torrid affair that lasted five exhausting weeks. I learned a lot about Lolita Yzerman in that short time. Because of her looks, a lot of people's first impression was that Lolly was a bubble-headed blonde, with nothing weightier on her mind than getting a blast out of life. Wrong. That was a mask she wore, and it was a good one. If you did manage to see through it, however, you found a calculating person, someone ruthless about getting what she wanted. Part of me hurt bad when Lolly broke off our relationship, but another part recognized that perhaps it was a lucky escape. -> continue_h
+
+== continue_h
+Her tattoos probably said it best. On each ankle was a delicate tattoo that glowed baby-blue under UV light. The left one read, "Good girls go to heaven", the right one said "Bad girls go everywhere." Lolly Yzerman went everywhere.
+
+And now she was dead.
+
+    - (loop) 
+    * [Look over at Jocasta] I set the holo down and looked over at Jocasta. She was starting to pull herself back together. Though she still had her face down on her knees, the heaving of her shoulders had stopped. Tough woman. The second break had been bad. Some people might not come back from something like that for a couple of months-and then only if they found a good head-shrinker. -> loop
+    * [Pour yourself a scotch] I felt the need for a drink. I didn't feel like sleeping anymore - amazing what a laser sight between the eyes will do for you - but my brain was leaden with adrenalin hangover. The bar was within easy reach of the bed (convenient), so I didn't even have to stand up. I poured myself a good clout of synthahol masquerading as scotch, hesitated, then poured a second drink for Jocasta. -> hand_jocasta_the_booze
+
+
+== hand_jocasta_the_booze
+When I turned back, she was sitting upright and gazing steadily at me. Those cool gray eyes were clear and focused. Still emotionless, but watchful and fully aware. That last catharsis seemed to have straightened her out, at least on the surface. (I wouldn't want to share the dreams she'd probably have, though.) Like I said, tough woman. Wordlessly I handed her the drink.
+
+I watched her hand as she took the glass. Steady, no visible shake at all. She inclined her head minutely in what might-just-have been a nod of thanks, and took a sip. She screwed up her face a little at the taste, either because she didn't like scotch or because she liked real scotch, but she took another mouthful. Then she lowered the glass.
+
+Her silence and her steady gaze, still fixed on my face, were making me uncomfortable. 
+
+    - (loop) 
+    * (connect_me) [How did you connect me?] "How did you connect me?" I pressed. "How did you even know my name?" She shrugged slightly. "I'd known about you all along," she said. "Lolita told me about your ... involvement." For the first time Jocasta was showing a little discomfort. -> loop
+    * [How did it happen?] I took a swallow of my own drink, mainly for something to do. Then I asked, "Can you tell me what happened?" "Lolita was shot, point-blank, in the face." Her voice wasn't the dead monotone it had been earlier, but it was dispassionate, as though describing a downturn in the stock market instead of the murder of her sister.' 'It happened in her apartment. The police said she apparently opened the door to someone she knew, someone she trusted. And he shot her." Her words said "he," but her eyes were still saying "you"-meaning me. -> loop
+    * (had_affair) {connect_me} [We had an affair] "We had an affair," I told her flatly. "But you also know it lasted less than two months, and we haven't been in contact since"
+    "Until she started blackmailing you."
+    ** {had_affair} [Blackmail again] I sighed, Blackmail again. "For what? And how did you get that idea anyway?"
+        "She sent me an e-mail message two days ago, the day before... before she died." Her icy control almost slipped there. I found that somehow reassuring. Tough she might be, but she was human.
+        *** [How did you find me?] "And how did you know where to find me?" She looked at me like I was an idiot. "Lolly told me." Interesting. As far as I knew, Lolly didn't know where I lived. She had my phone number, sure, but I'd moved several times since we'd been together. "Go on about the message," I said.
+        - "She was scared, and was just starting to realize how dangerous you were. That's why she told me all about it." -> voice_message
+
+
+== voice_message 
 Something occurred to me. "A voice message?"
-She shook her head, and her copper hair swung. "No, text only."
-Even more interesting. But I'd follow up on that later. "What did she say? What was she supposedly
-blackmailing me for?"
-"She didn't say," Jocasta said slowly. "She only told me you'd done something wrong. You'd stepped
-over the line-those were her words. And if she let it out, it would destroy your ongoing relationship with
-Lone Star."
+She shook her head, and her copper hair swung. "No, text only." Even more interesting. But I'd follow up on that later. 
 
-I barked with bitter laughter, making her flinch. "Oh, drek," I almost snarled. "Do you know what my
-'ongoing relationship' with Lone Star is?" I didn't wait for her to answer. "They're looking for me. They're
-trying to track me down. I went through their training program, I was going to be a cop. Then I found out
-just what that meant, and I skipped. Lone Star doesn't like that. I think my continued existence offends their
-delicate corporate sensibilities. My 'ongoing relationship' is that they're trying to find me and I'm trying not
-to be found."
-I swallowed back my anger-talking about Lone Star always slots me off-and took another gulp of
-near-scotch.
-Her eyes were still on me, but now I could see the wheels turning as she thought it through. "But you
-worked for Lone Star," she said slowly. "That's how you met Lolita."
-"Yeah, sure, I've done some work for individual Lone
-Star employees, but it's all been shadow stuff, all out-of-the-light. For Lone Star itself? Frag, no. My
-only payment would be a holding cell or a nine-millimeter migraine." I snorted. "But I suppose you don't
-believe me. "Look," I went on, a little quieter, "it's been a rough couple of days, and I feel like drek. I'm
-going to check my messages-now that I'm awake-but then I'm going back to bed. Feel free to finish your
-drink, then feel free to use the door. If you want to talk about it again, call me back in thirty-six hours or
-so."
+"What did she say? What was she supposedly blackmailing me for?" 
+"She didn't say," Jocasta said slowly. "She only told me you'd done something wrong. You'd stepped over the line-those were her words. And if she let it out, it would destroy your ongoing relationship with Lone Star."
+
+I barked with bitter laughter, making her flinch. "Oh, drek," I almost snarled. "Do you know what my 'ongoing relationship' with Lone Star is?" I didn't wait for her to answer. "They're looking for me. They're trying to track me down. I went through their training program, I was going to be a cop. Then I found out just what that meant, and I skipped. Lone Star doesn't like that. I think my continued existence offends their delicate corporate sensibilities. My 'ongoing relationship' is that they're trying to find me and I'm trying not to be found."
+I swallowed back my anger - talking about Lone Star always slots me off - and took another gulp of near-scotch.
+Her eyes were still on me, but now I could see the wheels turning as she thought it through. "But you worked for Lone Star," she said slowly. "That's how you met Lolita."
+
+"Yeah, sure, I've done some work for individual Lone Star employees, but it's all been shadow stuff, all out-of-the-light. For Lone Star itself? Frag, no. My only payment would be a holding cell or a nine-millimeter migraine." I snorted. "But I suppose you don't believe me. "Look," I went on, a little quieter, "it's been a rough couple of days, and I feel like drek. I'm going to check my messages - now that I'm awake - but then I'm going back to bed. Feel free to finish your drink, then feel free to use the door. If you want to talk about it again, call me back in thirty-six hours or so."
+
 I turned my back on her, slid down the bed until I could reach the telecom, and shifted the flat screen
 so I could see it better. Then I keyed in Message Replay. Instantly the screen lit up with the weasel-like
 face of Anwar the fixer. "Dirk," he began, but I hit the hold key, I checked the time/date stamp in the
@@ -366,6 +323,7 @@ biz. This particular Mr. Johnson had called a week ago from somewhere back east-
 from the accent- with a simple trace job. A missing employee, and the great benevolent corporation wanted
 to confirm that nothing bad had happened to her (like drek). And now Johnson, like everyone else and his
 fragging dog, wanted a status report. Tomorrow. Save, this time. Next.
+
 The next image, and the voice, galvanized me like a laser hit. Instinctively I glanced over my shoulder.
 Jocasta was bolt-upright in the chair, staring at the screen. No wonder. The big blue eyes of Lolita
 Yzerman looked back at me from the telecom. In place of the familiar twinkle was a shadow I knew very
@@ -378,6 +336,7 @@ was darker. "I guess you're not there," she went on sadly. My heart went out to 
 dead little girl. "When you get back, call me. My number's the same. It's.. ."-she hesitated-"it's really
 important. I think I'm in deep drek." She forced a smile onto her face, but it was a sorry attempt. "Call me,"
 she repeated. "I'll be waiting. Catch ya, Dirty Dirk."
+
 I hit the key to cancel the rest of the message queue, and sat back, still staring at the blank screen.
 "Catch ya, Dirty Dirk." One of Lolly's phrases, words from the past. I felt the urge to bring up a
 freeze-frame from her message, to drown one last time in those deep blue eyes. But I resisted the
@@ -385,26 +344,32 @@ temptation, I knew how much it would hurt. I remember a line from one of my old 
 "Some girls are like malaria, Derek m'lad," Patrick Bambra used to say, especially when he was into the
 whiskey. "And once you get 'em in your blood, you're never free of 'em." I wondered idly if Patrick had
 known Lolly.
+
 With an effort, I pushed back at the depression that threatened to settle over me. I turned toward
 Jocasta.
 And found myself staring down the muzzle of the L36 again, dazzled by the targeting laser. Frag it, I'd
 left the slotting thing on the table, right by the armchair. I can't have been thinking straight. If I hadn't been
 so bone-fragging tired, I'd never have done anything so drek-headed.
+
 Before I could say anything, Jocasta took her finger off the trigger, and the laser died. Then she let
 down the pistol's hammer and snapped on the safety, all in a very businesslike manner. She extended the
 weapon toward me, like a gift. "I'm sorry," she said. "I was wrong. That wasn't a blackmailer talking to a
 victim ... or to a murderer." I looked down at the pistol and shook my head. With a nod, she concealed the
 small weapon in a pouch on her belt.
+
 Silence stretched between us for half a minute. I was feeling too emotionally drained to strike up a
 conversation, and she was too busy scrutinizing my face. She must have approved of her conclusions,
 because she gave me a tight, businesslike smile. "You said you do shadow work?" I nodded. "Will you take
 my nuyen?"
+
 I was very tempted to tell her just what she could do with her money. I didn't think I particularly liked
 Jocasta Yzerman, but that might just have something to do with her pointing a gun at me twice in twenty
 minutes. But then I looked into her eyes again, and saw the hurt that was still there and would be for a long
 time to come. She'd lost a sister. What had I lost? An ex-girlfriend? Not even that, not even a real friend.
 Just a few hours' sleep and a bit of pride.
+
 I nodded. "Sure." Neither of us had to say what the job was.
+
 She smiled, just barely. "What's your rate?" she asked. She rumbled in another belt pouch, and pulled
 out a credstick, A three-ring certified credstick. I bumped Jocasta Yzerman up one notch on Montgomery's
 Socio-economic Ladder and down one notch on Montgomery's Intelligence Scale. A certified credstick is
@@ -414,6 +379,7 @@ She accepted that with a nod, returning the credstick to her pouch. Then she pul
 handed it to me. "Here's my phone number," she said, smiling again with what looked almost like a real
 smile this time. "Call me if you get anything." She stood, smoothing the sides of her pants with her palms,
 and took a breath. "Now get to bed. You look like drek."
+
 "Thanks," I said, perhaps a bit sarcastically. "Shut the door on your way out." I started to settle back
 onto the bed, then a thought struck me. "How did you get here?" I asked.
 "By cab."
@@ -426,6 +392,7 @@ duster off the hook and started readying myself to go outside.
 She wanted to argue, but seeing that my preparations included checking the action on my Colt
 Manhunter, she shut up. Smart girl. I shoved the massive chunk of metal back into the duster's built-in
 holster, and opened the door. "After you," I said chivalrously.
+
 One of the only reasons I like the La Jolla Apartments is that it's about the only building in Auburn that
 has its own secured parking. Sure, the gate and the locks won't keep out the real pros, but at least it's some
 protection from the street apes who'll chew up a parked car just to pass the time. The pros wouldn't waste
@@ -435,27 +402,33 @@ I thumbed the doors open, and lit up the engine as Jocasta struggled to get her 
 passenger side. You know what a normal petrochem Jackrabbit sounds like: a pair of boots in a
 tumble-dryer. Well, the engine in my baby sings. From the look Jocasta shot me, I knew she'd noticed the
 difference. I just smiled, and turned on the control systems.
+
 Quincy, the same slag who'd done my apartment's security system, worked on the car as well. (It's a
 great deal Quincy and I have. Thanks to some gray contacts, he buys tech toys at wholesale price minus. I
 pay for them, and he installs them for free. It's symbiosis. I get some cutting-edge tech for next to nothing,
 and Quincy gets to play with all the neat hardware.) Jocasta just stared as I fired up the Head-Up Display
 and the navigation subsystem. "Where do you live?" I asked casually.
+
 "South Fifty-sixth," she said. "The cross-street's Yakima."
 I raised an eyebrow-Tacoma, yet-but didn't say anything as I punched the destination into the nav
 system. The screen flashed up a map showing the most direct route. As I'd guessed, just hop onto Route 18
 over to Highway 5, then south till you smelled the "Tacoma aroma."
+
 Jocasta watched, fascinated, as I told the nav system to transfer the waypoints to the pilot. "Amazing,"
 she said, shaking her head. "I've only seen anything like that on a Nightsky." I just grinned, even though I'd
 never seen the inside of a Nightsky. "Does it have rigger controls, too?"
 
 My turn to shake my head. "No use to me," I told her. I brushed back my hair to show a metal-free
 forehead. "No datajack. I'm off-the-rack."
+
 That surprised her. "Isn't that a drawback in your... your occupation?"
+
 I shook my head, and slipped the Jackrabbit into gear. It was a topic I didn't like to think about much.
 Sure, most of the runners I know have some kind of cyber mods. Datajacks, at the very least. I suppose
 there've been times when I've wished for a smartgun interface or enhanced optics. But I've always found
 some reason not to get myself metalled up. It just doesn't seem right. Maybe I'm just insecure, but the idea
 of losing even a little of myself-of Dirk Montgomery-just doesn't sit well.
+
 We made the trip in silence. As we traveled through the apartment-blanketed hills west of Auburn, the
 sprawl that is Greater Seattle was glowing like fairy-lights-or maybe a convention of chipped-up fireflies-a
 spreading sea of light that seemed to reach to the horizons. Its brilliance leeched up into the sky, so thick
@@ -467,9 +440,11 @@ It was easy to tell when we'd entered Tacoma. The buildings were taller, the lig
 cars on the freeway were more expensive. Toyota Elites replaced Jackrabbits, and Mitsubishi Nightskys
 took the place of Westwind 2000s. Even the air seemed cleaner, fresher, but I knew that was just an
 illusion.
+
 Historically, Tacoma's a weird place. It used to be a sleepy little bedroom community. From pictures
 I've seen, it looked like small-town U.S.A. around the turn of the century. Then the money rolled in, and
 Seattle's poor cousin got to go to the ball.
+
 The Taco Dome was a ways behind us on our right when the nav reminded me to take the Fifty-sixth
 Street exit. I hung a right, flashed around the cloverleaf, and cruised east on South Fifty-sixth, a broad,
 well-lit street. The buildings on both sides were tall, probably eighty-plus stories. Another difference
@@ -482,27 +457,35 @@ brownstones. (All make-believe, of course. The "brownstones" were construction-p
 jobs, with textured facades that probably included some kind of armor. And if they were more than ten
 years old, I'd be really surprised. By now, real brownstones would have been turned into piles of sand by
 the corrosive nasties in the air.)
+
 "That's my place," Jocasta said, pointing. She smiled at my reaction. "Not the whole thing, just half of
 the top floor." I estimated the building by eye. "Just" half the top floor was maybe four times the size of my
 doss. Money. Definitely money.
+
 I pulled over and hit the button to pop the door. "I'll call when I've got something," I told her.
 But she wasn't paying attention. She was looking, a little dismayed, at a gunmetal-gray Westwind
 parked two cars up from us.
+
 "What's up?" I asked.
 She shook her head. "Tony," was all she said.
 "Tony? Is that trouble?"
+
 She shook her head again. "Not the way you mean." She was silent for a moment. "It's Tony
 DeGianetto. We were ... we ..." I let her off the hook by nodding understandingly.
+
 "I broke it off a week ago," she said. "I thought it was amicable enough on both sides, so I didn't
 change the lock codes." She looked irritated but maybe a little worried, too. "I guess he's come back."
 I waited for her to go on, but she didn't seem inclined. She also didn't seem inclined to get out of my
 car. I sighed. "Do you want me to come in with you?"
+
 "Well. .." She hesitated. "Tony's not dangerous. But I really don't want to talk to him. I don't want to
 go over it all again. Would you mind?"
+
 I did mind. I was tired, and I wasn't in the mood to run cover for Jocasta Yzerman. But what the
 frag? "Sure," I said as sincerely as I could fake.
 As we got out of the car, I looked up at the top floor of the brownstone. No lights. I pointed that out to
 Jocasta.
+
 She shrugged. "Maybe he just got here." Right on cue, a light went on in the top-right window.
 Followed by a much brighter light. A fireball blossomed, and the window leaped into the street. I tried to
 
@@ -518,33 +501,40 @@ bloody blue murder. But I was still alive, and that made it all okay.
 Jocasta was sprawled on her back beside me. Her eyes were open and moving, but they were glazed
 and definitely weren't tracking anything in the real world. I looked around, expecting to see a crowd of
 spectators gathering.
+
 No crowd. Then I remembered where I was. Tacoma isn't Auburn, where people usually head
 toward trouble, just to see what's going down. Here, the pedestrians who'd been on the street only seconds
 before had pulled an admirable disappearing act. Besides Jocasta and me, the only person still on the
 sidewalk was literally on the sidewalk. Sprawled bonelessly on the cement. And the chunk of something
 that the blast had driven into his skull seemed to imply he wouldn't be moving, at least not under his own
 power.
+
 Jocasta's brownstone was still standing-a testament to modern building techniques-and even the false
 stone facade didn't seem much worse for wear. The two windows in the top-right corner were gone,
 though, and a fire was blazing merrily in what had been her apartment.
+
 Jocasta stirred and said something, but I couldn't hear it over the ringing in my ears. Then I did hear
 something else. The sound was faint but unmistakably that of approaching sirens. Logical. Not a soul on the
 street, but every PANICBUTTON within three blocks was probably sending out its signal.
+
 PANICBUTTONs and sirens mean Lone Star, and that meant it was time to move. (I myself wasn't
 tracking all that well yet, but enough to figure that one out.) I grabbed Jocasta's shoulders, pulling her to her
 feet. Thumbing the passenger door open, I shoved her inside. Then I was in the driver's seat, lighting up the
 engine and booting out of there. (Sure, I know leaving the scene of a crime is bad news. And making a fast
 getaway like that could definitely start people wondering if the guy in the red Jackrabbit might be involved
 somehow, but I honestly didn't give a flying frag.)
+
 My equilibrium was shot, probably because of the shock to my ears, and my depth perception kept
 doing strange things, neither of which helped my driving. The steering wheel kept shifting in my hands as
 Quincy's ungunned autopilot intervened ("More to the left, drek-head") to keep us from piling into buildings
 and other immovable objects. Jocasta was watching me with wide, frightened eyes, but she had the sense
 to keep quiet. Or maybe I just couldn't hear her.
+
 By the time we were back on Highway 5 and heading north and east again, the ringing in my ears was
 starting to fade. As normal sounds began to come back, the wild panic and paranoia twisting in my chest
 also began to fade. Loosening my death-grip on the wheel, I let the speedbar on the HUD creep down from
 outrageous to merely excessive.
+
 As for Jocasta, she was still looking a little shell-shocked, but she had herself under control. Not
 knowing what to say, I tried to play it safe. "I'm sorry," I told her.
 She shook her head slowly. "I should feel bad," she said softly. "Tony's dead." Her gray eyes fixed on
@@ -552,13 +542,16 @@ me, silently asking for understanding. "But I can't feel bad. I'm too busy being
 I smiled comfortingly. "It's always like that," I reassured her. "You're not being cold or callous. You're
 still alive after somebody else didn't intend you to be. That's reason enough to feel good. You'll have time
 for grief later."
+
 Jocasta nodded, but remained silent for a few minutes. As she turned to gaze toward the lights passing
 outside, I let the speed drop down another few klicks. Now wasn't the time to get nailed with a speeding
 ticket. Then I felt her eyes on me again and I glanced over.
+
 "Why?" Her voice was quiet, but virtually crackling with tension.
 I shrugged, putting off giving an answer she wouldn't like.
 But she wasn't accepting that. "Why?" she repeated. "Loose ends," I said with a sigh. "You don't
 leave your tools lying around after you've used them."
+
 Her brow furrowed as she thought about that. It was only a couple of seconds before I saw the
 comprehension in her eyes. (Smart Lady, I thought again.) "Explain what you mean," she told me.
 I shrugged again. I knew she'd already figured it out by herself, but maybe she just wanted to hear
@@ -576,6 +569,7 @@ by your own petard. Case closed. We're all out of the way, and X is totally in t
 She didn't answer for nearly -a full minute. I could almost hear her brain ticking as she thought it
 through. "You've got to be right," she said at last. "I was programmed, then sacrificed. You were merely
 sacrificed." She scowled. "I can't believe it. This just doesn't happen."
+
 "Maybe not in your world." I could see that she wanted to ask about my world, but then thought better
 of it.
 We were approaching Meridian Avenue. Time to decide where the hell I thought I was going. And
@@ -584,21 +578,27 @@ on here," I told her. "I can find you a safe doss if you need it. Not what you'r
 "I'll handle that," she cut in. "I can stay with colleagues." "Where?"
 She thought about that a bit more. "You can drop me on One hundred-and-eighth," she said. "The
 south end."
+
 Bellevue. Beaux Arts, to be exact. Even more a money neighborhood than Tacoma. Curiosity got the
 better of me. "What do you do?" I asked. "What corp?"
+
 She smiled a little. "No corp. I'm a neo-ecologist at the University of Puget Sound."
 I glanced at her tailored synthleathers and snorted. "UPS must have upped its salaries."
 "No, they still pay drek. But KCPS pays better than scale."
+
 KCPS. I recognized the call letters of one of the metroplex's educational trid stations. Something
 tickled in the back of my memory.
+
 Then I remembered. "The Awakened World," I blurted.
 Jocasta was smiling broadly now. "You watch it? I wouldn't think it was your kind of thing."
 I ignored the subtle jab. "I've seen it a few times." Moody to watch you, is what I didn't add. Call me
 narrow-minded, but I'm much more interested in mammals that look like Jocasta Yzerman than in
 novopossums or metapedes.
+
 Well, that explained the money. Trid presenters, even on ratings dogs like "The Awakened World," get
 paid a drekload. It also explained the feeling of familiarity that had been nagging at me ever since I'd set
 eyes on Jocasta. Okay. Beaux Arts it was.
+
 I cruised straight up Highway 5 to Route 99, east into the relatively quiet bedroom community of
 Renton, and then north on 405 through Newport Hills. As we blew toward the Intercity 90 exit, the buildings
 flanking the highway began to change. They were still mostly apartment blocks, except bigger, cleaner, and
@@ -606,56 +606,71 @@ newer than the ones in Renton and Newport. Where the two southern districts were
 mid-level wage slaves and managers, Beaux Arts was where many upper-level corp execs had their
 penthouses. I remembered the security rating catalog I'd scanned when I was still with Lone Star. The Star
 rated Beaux Arts luxury class, security rating triple-A. It doesn't come any higher.
+
 I slowed down some more, and swung west onto Intercity 90, heading toward the East Channel
 Bridge, then cut right onto Bellevue Way. Right again onto 113th Avenue South East, then jog over to
 108th, into deepest, darkest Beaux Arts. Bright lights rose into the sky around me. Mentally comparing the
 signs of the good life with my own doss in Auburn and with my final destination this evening, I let out a sigh.
 It was fragging hard to believe all these places were in the same city. "Where now?" I asked Jocasta. "You
 can drop me here."
+
 I was about to protest, but caught myself. Bellevue's Bellevue, after all, and Beaux Arts is one of the
 few neighborhoods where someone who looks like Jocasta can walk the streets without becoming the
 unwilling joy-toy of some thrill-gang. It rankled a little that she didn't trust me enough to let me know exactly
 where she'd be staying, but only a little. There are times when I don't completely trust me, and I know
 myself a lot better than did Jocasta Yzerman.
+
 Then I got to thinking, and realized the Beaux Arts Village was up the street from here. The Village is
 a little enclave, with walls and gates guarded a lot better than some banks. The houses are separated by big
 trees-real ones-most of them with a great view of the East Channel or down onto the heavily secured
 
 yacht harbor just south of the bridge. I smiled benignly at Jocasta. "The Village it is," I said mildly. She
 twitched slightly, and I knew I'd got her.
+
 I didn't drive up to the Village, however. Not wanting to draw attention to either my car or myself, I
 just pulled over. "Remember," I told her as she swung her long legs out of the car. "Lie low, zero out. Don't
 let anybody know where you are or even that you're still alive. Both of us are supposed to be meat right
 now. X might not slot up twice."
+
 She flinched a little, but recovered instantly. "What about Lone Star?" she asked. "They'll be looking
 for me after.. ."
+
 "Frag 'em," I snarled, on basic principles. "It's safer. We don't know who X is or where he's tied in.
 Maybe he's got connections into the Star. Will your colleagues cover for you?"
+
 She had to think about that one, which worried me a little. Then her expression cleared and she
 answered, "Yes. He owes me, big time."
+
 Curiosity again, but I bit down on the obvious question. "Okay," I allowed. "But keep in touch. I won't
 ask for your number, but you take mine." I handed her a business card, the one without the street address.
 "Call me tomorrow. If I'm out, leave a message."
+
 She pocketed the card without looking at it. "You're not going home?"
 I snorted. "Don't worry about me," I told her. "I've done the fade before. Wherever I am, you can get
 me at that number. So use it, okay? Tomorrow?"
+
 She nodded, closed the car door and started to walk away. Then turned back. I powered down the
 window. "I'm sorry I got you into this," she said softly. She looked upset enough that I didn't shoot back the
 smartass answer on the tip of my tongue.
+
 "Null perspiration," I replied smoothly. "I got dragged into this when X first picked me as his shill. You
 just followed the script."
+
 She bit her lip, the troubled expression only making her prettier. For a nanosecond I debated
 suggesting-oh so sincerely-that she'd have a better chance of making it to morning if she dossed down with
 me. But then I purged that thought and all the other ignoble ones tagging along with it. A quick jam with
 Jocasta Yzerman would be wiz, but I really was tired. And if I had to ditch her later, for whatever reason,
 any involvement would only make it harder.
+
 "I'll call you," she said, then turned away for the second time. The ignoble thoughts returned as I
 watched her receding rear aspect, but I stomped on them like so many roaches. I ran the passenger
 window back up and pulled away from the curb.
+
 Bellevue was a good cruise from Tacoma and from my main base in Auburn, but it was conveniently
 close to my secondary doss. I got back onto Intercity 90 and pointed the Jackrabbit's streamlined nose east.
 Hitting Route 405,1 swung north, then took a right onto the old Woodinville Redmond Road, and finally onto
 the Woodinville-Duvall Road.
+
 The moment I left 405, the scenery changed again, even more drastically. I was into Redmond-the
 Barrens-and anyone who's ever been there knows you can't miss the boundary of that district. The
 buildings were suddenly lower, as if the graceful giants of Bellevue had been cut off at the knees, while
@@ -667,23 +682,25 @@ Barrens had responded in typically warm Redmond manner by shooting most of them 
 were cut here and there by concrete-lined drainage culverts. I couldn't see the foul and corrosive water,
 which is usually liberally garnished with dead dogs or worse, and thanks to the Jackrabbit's air filtering, I
 couldn't smell it either.
+
 As I passed Cottage Lake, I put my foot down until the tach display flashed warning-red in the HUD.
 Thanks be to Quincy, forever amen, the active suspension took care of the speed-wobble, and the engine
 howled like a banshee. Muzzle flashes split the night to my left, but nothing unpleasant even came near me.
 The Crimson Crush just weren't shooting straight tonight. Once past Paradise Lake Road I let off on the
 throttle. The Crush never played east of the intersection, knowing the Rusted Stilettos would eat them for
 breakfast if they did.
+
 Left onto High Bridge Road, then left again onto Jasmine Boulevard-no jasmine, and it sure wasn't a
 real boulevard-and into the area known as Purity. A real nasty part of the Barrens if you're an outsider, but
 Purity's got a kind of code you don't find many places in Redmond. The code is simple: "Don't frag with me,
 I won't frag with you (unless somebody makes it worth my while)." If you're a local, that is.
 And in a sense I was. I kept a secondary doss in Purity, paying my protection money to the
-
 Amerindian street gang in the area. Our deal was that I pay my nuyen, and they get to use-but not
 abuse-my place when I'm not in it. With most other gangs, you cut a deal like that and you should have your
 head examined. Come back after they've used your place and it'll be stripped to the floorboards. A couple
 of big guys will also probably be waiting to separate you from anything valuable you happen to be
 carrying-or maybe the fillings in your teeth if they're' feeling militant. But this gang has a sense of honor.
+
 Maybe it's their tribal background. In any case, once they're bought, they stay bought, at least until
 somebody else outbids you. My secret is to pay them more than anybody who lives in the Barrens can.
 I parked the Jackrabbit in what used to be a corner store until somebody took out the front wall with a
@@ -697,6 +714,7 @@ stepping over the empty chip-carriers and used family-planning products, I power
 always, I checked the usage log first thing. As expected, the Amerinds had been making longdistance calls,
 but at least they continued to have the courtesy to charge them to another number. Governor Schultz's, I
 was glad to see.
+
 I keyed in the telecom code for my Auburn apartment. When the other machine opened the line, I
 triggered a wiz little slave utility that I'd picked up from Buddy, a drek-hot decker of my acquaintance. The
 utility, which is designed to play merry hell with the local telecom corp, persuades the central switching
@@ -706,27 +724,33 @@ features of my Auburn telecom from Purity, and I can make outgoing calls from th
 computers would swear up and down that the calls were being placed from Third Street Southwest and D
 Street in Auburn. Slick, and potentially a lifesaver. With the utility running, somebody would have to be
 more than very good to ever trace me via telephone grid records.
+
 While the two machines were sorting out the handshaking necessary to cooperatively dry-gulch the
 LTG computers, I sat back and thought about my next move.
+
 This business with Lolly, Jocasta, and our mysterious X was understandably high on my priority list.
 But I had other irons in the fire as well, a couple of cases-paying cases-on the go. I couldn't just forget
 about them without doing irreparable harm to both my street rep and my cred balance. What I could do
 was back off on the intensity a little.
+
 The telecom beeped its readiness, so I called up a listing of all incoming messages. The list couldn't tell
 me a caller's identity, but it did give me the time and date of the message and, in most cases, the LTG
 number from which the call was placed. That let me flip through and delete junk messages like those from
 Anwar the fixer. I flagged a couple more whose originating number I recognized, instructing the telecom "to
 fire off a standard I'm-busy-I'll-call-when-I'm-not to them.
+
 That left two messages, neither of which showed an originating LTG number. (This piqued my
 interest, of course. Someone with the right hardware wouldn't have too much problem suppressing the
 originating number, but it's not a common skill.) The fact that both were identified as voice-only gave me a
 good clue as to who the caller was. I highlighted the first one and hit Play.
+
 I had guessed right. The flat, calm voice, with its trace of an accent, was unmistakable. My Mr.
 Johnson from (probably) Chicago. "Mr. Dirk," he said, "I assume that you are proceeding with the issue we
 discussed some days ago. Your binder and first week's payment have been transferred from the holding
 account, which, I presume, means you are still standing by our agreement. Please contact me, as per the
-agreed-upon arrangements, to confirm. Thank you." Pedantic slot. I keyed up the next message. The
-time/date stamp showed that it had come in earlier that evening, about the time Jocasta and I were dodging
+agreed-upon arrangements, to confirm. Thank you." Pedantic slot. 
+
+I keyed up the next message. The time/date stamp showed that it had come in earlier that evening, about the time Jocasta and I were dodging
 debris. "Mr. Dirk," the same voice droned, "the urgency on this issue has just increased somewhat. We
 believe that our... our asset is in physical danger. I would greatly appreciate it if you would upgrade your
 efforts appropriately. I would also appreciate it if you could confirm your continued interest in our
@@ -759,11 +783,13 @@ routine on my telecom to scan all news sources and datafaxes for the name Juli L
 I'd probably have to invest a little more effort in the matter. Eventually.
 I pulled out my wallet and extracted a printout of her dossier picture. Looked like a nice kid. Clean-cut,
 fluffy blonde hair. Reminded me of Lolly.
+
 Frag, I was getting morbid. It always happens when I'm bagged. I thought about the early night I'd
 been planning, and laughed. I returned the picture to my wallet, kicked the telecom to standby mode, and
 collapsed on the bed. Images flowed over the insides of my eyelids. Explosions, gun muzzles, targeting
 lasers. But mostly young, blonde women: sometimes Lolly, sometimes Juli Long. They followed me down
 into the dark pit of sleep.
+
 -> chapter_4
 === chapter_4
 Early morning is one of the quietest times in a jungle. Nocturnal predators have called it a night, and
