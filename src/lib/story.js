@@ -5,9 +5,12 @@ import { get, writable } from "svelte/store";
 export const latest_fragment = writable("");
 export const choices_list = writable([]);
 export const dialog_backfill = writable([]);
+export const currentFlowName = writable("");
+export const currentText = writable("");
+export const currentTags = writable("")
 
 export default class StateManager {
-  constructor(story) {
+  constructor(story, dialog_element) {
     this.story = story;
     this.story_state = writable({})
     this.possible_states = this.story.mainContentContainer.namedContent;
@@ -23,6 +26,24 @@ export default class StateManager {
         return history;
       })
     })
+
+
+    this.story.onMakeChoice = (choice) => {
+      console.log("Choice made", choice);
+    }
+
+    this.story.onChoosePathString = (path) => {
+      console.log(path, arguments);
+    }
+    this.story.onEvaluateFunction = () => {
+      console.log("evalFn", arguments);
+    }
+    this.story.onCompleteEvaluateFunction = () => {
+      console.log("evalFnComplete", arguments);
+    }
+    this.story.onDidContinue = () => {
+      console.log("didContinue", arguments);
+    }
 
     var that = this;
     function updateFn() {
