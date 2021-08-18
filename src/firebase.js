@@ -1,6 +1,6 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
+import firebase from '@firebase/app';
+import '@firebase/auth';
+import '@firebase/firestore';
 var firebaseConfig = {
   apiKey: "AIzaSyCo8nzDJYA-Dhd4B6cIZQG1Z8sJNFdeHSo",
   authDomain: "ink-lord.firebaseapp.com",
