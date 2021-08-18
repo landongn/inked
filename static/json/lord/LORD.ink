@@ -30,19 +30,31 @@ Legend of the Red Dragon. V1.
 <Connect>
 
 + [Enter the Realm] -> enter_realm
-+ [How to play] -> instructions
++ [What is this?] -> instructions
 + [List Warriors] -> player_list
 
 == instructions 
-How to play: Enter the forest, slay monsters, and rest in the fields. But beware, other subjects of the realm lurk in the shadows, ready to make their mark. 
+Legend of the Red Dragon is an old Bulletin Board System game.  Back in the late 80s to early 90s, it was one of the first forms of online asynchronous multiplayer games that were easily accessible and (mostly) free to play. 
+The goal of LORD is to defeat the eponymous Red Dragon, however that is no easy feat.  The Red Dragon is supremely powerful, and it will require you to level up, upgrade your equipment, and defeat every trainer in the game before you can even attempt to fight the dragon. 
 
-    + [Understood] -> connect
+Most of the game takes place on a 24 hour real-world game clock.  Each day, you are granted enough energy to fight in the forest against the forces of evil, which is the primary way to level up. Once you run out of energy for the day, you can no longer search for battles-- however the fun does not stop there.
+LORD is a PVP game.  You are able to hunt down and murder other players through various mechanics in the game - some are easy, some not so much - and upon defeating them you gain their gold and a large portion of experience, not to mention reputation and fame among the villagers.
+
+Characters that have not been played for more than 30 days are deleted from the system, so check back daily to keep the game going. 
+
+I don't own the copywrite for this title, that belongs to Metropolis Gameport.  Legend of the Red Dragon was created by Seth Robinson. 
+
++ [Understood] -> connect
 
 == enter_realm
 <EnterRealm>
 
-
-+ [Character Select] -> character_create
+{
+    - character_name && character_class:
+    + [Connect as {character_name}] -> start_the_day
+    - else:
+    + [Create a Character] -> character_create
+} 
 
 
 == player_list
