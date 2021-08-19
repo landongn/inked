@@ -5,11 +5,9 @@ import { get, writable } from "svelte/store";
 export const latest_fragment = writable("");
 export const choices_list = writable([]);
 export const dialog_backfill = writable([]);
-export const currentFlowName = writable("");
-export const currentText = writable("");
-export const currentTags = writable("")
 
 export const globals = writable({});
+export const tags = writable({});
 
 import { db } from '../firebase';
 
@@ -25,6 +23,9 @@ export default class StateManager {
     
 
     latest_fragment.set(this.story.Continue());
+    
+    
+    
     choices_list.set(this.story.currentChoices);
 
     latest_fragment.subscribe((v) => {
@@ -45,7 +46,7 @@ export default class StateManager {
 
 
     this.buildObservers();
-   
+    this.updateTags();
 
     this.story.onChoosePathString = (path) => {
       console.log(path, arguments);
@@ -57,6 +58,7 @@ export default class StateManager {
       console.log("evalFnComplete", arguments);
     }
     this.story.onDidContinue = () => {
+      this.updateTags();
       console.log("didContinue", arguments);
   
     }
@@ -72,6 +74,18 @@ export default class StateManager {
     }
 
     requestAnimationFrame(updateFn)
+  }
+
+  updateTags() {
+    let new_tags = {};
+    console.log(":: tags", this.story.currentTags);
+    this.story.currentTags.map((s) => {
+      let t = JSON.parse(s);
+      for (let key in t) {
+        new_tags[key] = t[key]
+      }
+    })
+    tags.set(new_tags);
   }
 
   async updateUserRecord(props) {
@@ -91,6 +105,16 @@ export default class StateManager {
     this.story.ObserveVariable("character_name", (varName, newValue) => {
       console.log("character name changed", varName, newValue);
       this.updateUserRecord({character_name: newValue})
+    })
+
+    this.story.ObserveVariable("hitpoints_max", (varName, newValue) => {
+      console.log("hitpoints_max changed", varName, newValue);
+      this.updateUserRecord({hitpoints_max: newValue});
+    })
+
+    this.story.ObserveVariable("has_fairy", (varName, newValue) => {
+      console.log("has_fairy changed", varName, newValue);
+      this.updateUserRecord({has_fairy: newValue});
     })
 
     this.story.ObserveVariable("rank", (varName, newValue) => {
@@ -117,9 +141,9 @@ export default class StateManager {
       console.log("class", varName, newValue);
       this.updateUserRecord({class: newValue})
     })
-    this.story.ObserveVariable("beauty", (varName, newValue) => {
-      console.log("beauty", varName, newValue);
-      this.updateUserRecord({beauty: newValue})
+    this.story.ObserveVariable("charm", (varName, newValue) => {
+      console.log("charm updated", varName, newValue);
+      this.updateUserRecord({charm: newValue})
     })
     this.story.ObserveVariable("reputation", (varName, newValue) => {
       console.log("reputation", varName, newValue);
@@ -129,9 +153,9 @@ export default class StateManager {
       console.log("gold", varName, newValue);
       this.updateUserRecord({gold: newValue})
     })
-    this.story.ObserveVariable("master", (varName, newValue) => {
-      console.log("master", varName, newValue);
-      this.updateUserRecord({master: newValue})
+    this.story.ObserveVariable("current_trainer", (varName, newValue) => {
+      console.log("current_trainer updated", varName, newValue);
+      this.updateUserRecord({current_trainer: newValue})
     })
     this.story.ObserveVariable("hitpoints", (varName, newValue) => {
       console.log("hitpoints", varName, newValue);
@@ -153,21 +177,18 @@ export default class StateManager {
       console.log("is_alive", varName, newValue);
       this.updateUserRecord({is_alive: newValue})
     })
-    this.story.ObserveVariable("attack_power", (varName, newValue) => {
-      console.log("attack_power", varName, newValue);
-      this.updateUserRecord({attack_power: newValue})
+    this.story.ObserveVariable("strength", (varName, newValue) => {
+      console.log("strength", varName, newValue);
+      this.updateUserRecord({strength: newValue})
     })
-    this.story.ObserveVariable("armor_class", (varName, newValue) => {
-      console.log("armor_class", varName, newValue);
-      this.updateUserRecord({armor_class: newValue})
+    this.story.ObserveVariable("defense", (varName, newValue) => {
+      console.log("defense", varName, newValue);
+      this.updateUserRecord({defense: newValue})
     })
     this.story.ObserveVariable("spirits", (varName, newValue) => {
       console.log("spirits", varName, newValue);
       this.updateUserRecord({spirits: newValue})
     })
-    this.story.ObserveVariable("hitpoints_max", (varName, newValue) => {
-      console.log("hitpoints_max", varName, newValue);
-      this.updateUserRecord({hitpoints_max: newValue})
-    })
+    
   }
 }

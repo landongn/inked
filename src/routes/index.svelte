@@ -1,4 +1,10 @@
 <script context="module">
+  import { auth, googleProvider } from '../firebase.js';
+  import {Story} from "inkjs/dist/ink.js";
+  import StateManager from "$lib/story";
+  import { onMount } from "svelte";
+  import {latest_fragment, choices_list, dialog_backfill, tags} from "$lib/story";
+
   export async function load({ page, fetch, session, context }) {
     const res = await fetch("/json/lord/lord.json");
     if (res.ok) {
@@ -44,16 +50,12 @@
 </style>
 
 <script>
-  import { auth, googleProvider } from '../firebase.js';
+
 export let story_data;
-import Choice from "../components/choice.svelte";
-import {Story} from "inkjs/dist/ink.js";
-import StateManager from "$lib/story";
-import { onMount } from "svelte";
-import {latest_fragment, choices_list, dialog_backfill} from "$lib/story";
-let parsed_story, gameState, backfill;
+let parsed_story, gameState, backfill, user;
 
 //import custom components 
+import Choice from "../components/choice.svelte";
 import PlayerAlias from "../components/player_alias.svelte";
 import CharacterSheet from "../components/character_sheet.svelte";
 import DailyNews from "../components/daily_news.svelte";
@@ -92,11 +94,9 @@ const componentMap = {
 
 onMount(() => {
  parsed_story = new Story(story_data);
-
- 
 });
 
-let user;
+
 
 auth.onAuthStateChanged((u) => {
   if (u) { user = u; } else {user = null}
@@ -108,8 +108,7 @@ auth.onAuthStateChanged((u) => {
 
 
 function login() {
-    auth.signInWithPopup(googleProvider);
-    
+  auth.signInWithPopup(googleProvider);
 }
 
 </script>
@@ -124,7 +123,6 @@ function login() {
             this={componentMap[word]} 
             story={gameState.story} 
             user={user} /> <!-- and now we render the corresponding component, based on our lookup above-->
-          
         {:else} 
           {[word, " "].join(" ")} <!-- when no match is found, we render the word into the line instead. -->
         {/if}
@@ -132,11 +130,16 @@ function login() {
       </p>
     {/each}
   </div>
+  
+  {JSON.stringify($tags)}
+  {#if $tags["encounter"] !== 'forest_fight'}
+    {#each $choices_list as choice}
+      <Choice state={gameState} choice_data={choice} />
+    {/each}
+  {/if}
 
 
-  {#each $choices_list as choice}
-    <Choice state={gameState} choice_data={choice} />
-  {/each}
+  
 
 {:else}
   <h1> Hi hello, welcome. to play, sign in below. </h1>

@@ -20,19 +20,21 @@ onMount(async () => {
     story.variablesState["weapon_name"] = data.weapon_name;
     story.variablesState["armor_name"] = data.armor_name;
     story.variablesState["class"] = data.class;
-    story.variablesState["beauty"] = data.beauty;
+    story.variablesState["charm"] = data.charm;
     story.variablesState["reputation"] = data.reputation;
     story.variablesState["gold"] = data.gold;
-    story.variablesState["master"] = data.master;
+    story.variablesState["trainer"] = data.trainer;
     story.variablesState["hitpoints"] = data.hitpoints;
     story.variablesState["skill_uses"] = data.skill_uses;
     story.variablesState["gems"] = data.gems;
     story.variablesState["forest_fights"] = data.forest_fights;
     story.variablesState["is_alive"] = data.is_alive;
-    story.variablesState["attack_power"] = data.attack_power;
-    story.variablesState["armor_class"] = data.armor_class;
+    story.variablesState["strength"] = data.attack_power;
+    story.variablesState["current_trainer"] = data.current_trainer;
+    story.variablesState["defense"] = data.armor_class;
     story.variablesState["spirits"] = data.spirits;
-    story.variablesState["hitspoints_max"] = data.hitpoints_max;
+    story.variablesState["hitpoints_max"] = data.hitpoints_max;
+    story.variablesState["has_fairy"] = data.has_fairy
 
   } else {
     // create a user record in firebase
@@ -44,10 +46,10 @@ onMount(async () => {
       weapon_name: "Stick",
       armor_name: "Coat",
       class: "",
-      beauty: 1,
+      charm: 1,
       reputation: 0,
       gold: 300,
-      master: "Halder",
+      current_trainer: "Halder",
       hitpoints: 30,
       skill_uses: 1,
       gems: 0,
@@ -57,6 +59,7 @@ onMount(async () => {
       armor_class: 1,
       spirits: "high",
       hitspoints_max: 30,
+      has_fairy: false
     }
     let newRef = db.collection('players').doc(user.uid);
     newRef.set(new_user);

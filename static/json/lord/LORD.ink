@@ -1,30 +1,60 @@
+// character data
 VAR character_name = ""
 VAR class = ""
-VAR player_count = 0
 VAR weapon_name = "Stick"
 VAR armor_name = "Coat"
-VAR spirits = ""
 VAR experience_points = 0
 VAR gold = 0
 VAR reputation = 0
-VAR beauty = 0
+VAR charm = 0
 VAR skill_uses = 0
-VAR rank = 0
-VAR attack_power = 1
-VAR armor_class = 1
+VAR rank = 1
+VAR strength = 1
+VAR defense = 1
 VAR hitpoints = 30
 VAR hitpoints_max = 30
 VAR gems = 0
-VAR master = ""
 VAR is_alive = true
 VAR forest_fights = 100
 VAR last_location = ""
+VAR player_fights = 10
+
+// equipment vars
+VAR weapon_attack_power = 0
+VAR total_defense = 0
+
+// Trainer data
+VAR current_trainer = ""
+VAR experience_to_next_rank = 0
+VAR trainer_strength = 0
+VAR trainer_defense = 0
+VAR trainer_hitpoints = 0
+VAR trainer_battle_available = true
+
+// world vars
+VAR player_count = 0
+VAR violet_romance_rank = 0
+VAR heard_bard_song = false
+VAR has_horse = false
+VAR has_fairy = false
+VAR spirits = ""
+
+// forest fight vars
+VAR forest_encounter_mob_name = ""
+VAR forest_encounter_hitpoints = 0
+VAR forest_encounter_strength = 0
+VAR forest_encounter_defense = 0
+VAR forest_encounter_gold = 0
+VAR forest_encounter_experience_points = 0
+VAR forest_encounter_death_rattle = ""
+
 
 
 
 -> connect 
 
 === connect ===
+# {"location": "connecting..."}
 Legend of the Red Dragon. V1. 
 
 <Connect>
@@ -47,10 +77,11 @@ I don't own the copywrite for this title, that belongs to Metropolis Gameport.  
 + [Understood] -> connect
 
 == enter_realm
+# {"location": "character_select"}
 <EnterRealm>
 
 {
-    - character_name && character_class:
+    - character_name:
     + [Connect as {character_name}] -> start_the_day
     - else:
     + [Create a Character] -> character_create
@@ -58,6 +89,7 @@ I don't own the copywrite for this title, that belongs to Metropolis Gameport.  
 
 
 == player_list
+# {"location": "player_list"}
 There are {player_count} subjects of the realm. 
 
 <PlayerTable>
@@ -65,7 +97,7 @@ There are {player_count} subjects of the realm.
 + [Continue] -> connect
 
 === character_create === 
-
+# {"location": "character_create"}
 -> alias
 
 == alias
@@ -109,30 +141,34 @@ You have always wanted one thing, and one thing alone: filthy lucre, by any mean
 
 
 === start_the_day === 
+# {"location": "start_the_day"}
 For being a {class} student, you receive an extra skill usage for today!
 
 You are in {spirits} spirits today. 
 
 You wake up early, strap your {weapon_name} to your back, put on your {armor_name} and head out to the town square, seeking adventure, fame, and honor.
 
+// note -- figure out how to handle if a character is dead or not when they log in. 
+
 + [MORE] -> start_the_day.character_info
 
 = character_info
+# {"location": "character_info"}
 <CharacterSheet>
 + [MORE] -> start_the_day.news_today
 
 = news_today 
-The Daily Happenings... 
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# {"location": "news_today"}
 <DailyNews> 
 
 + [MORE] -> town_square.index
 
 === town_square ===
+# {"location": "town_square"}
 -> town_square.index
 
 = index 
-
+<TownSquare>
 + [Forest] -> forest.index
 + [King Arthur's Weapons] -> weapon_shop.index
 + [Healer's Hut] -> healer.index
@@ -147,27 +183,194 @@ The Daily Happenings...
 + [Quit to Fields] -> fields.index
 
 === forest === 
+# {"location": "forest"}
+
 -> forest.index 
 = index 
+<ForestIndex>
 You enter the murky dark wood outside of town. A giant maw of gloomy darkness ever beckoning. 
 
 What do you want to do?
+
 + [Look for something to kill] -> forest.search_for_encounter
 + [Healer's Hut] -> healer.index
 + [Return to Town] -> town_square.index
 
 
 = search_for_encounter
-// randomize somehow? 
--> forest.index
+{ 
+    - forest_fights == 0: Your bones ache and your muscles are sore. Perhaps tomorrow. 
+    + [Continue] -> forest.index
+}
+~ temp dice_roll = RANDOM(1, 100)
+{ 
+    - dice_roll >= 95: -> fairy
+    - dice_roll >= 90: -> bag_of_gold
+    - dice_roll >= 85: -> free_gem
+    - dice_roll >= 80: -> ugly_stick
+    - dice_roll >= 75: -> old_hag
+    - dice_roll >= 70: -> rescue
+    - else: -> fight
+}
+
+
+= free_gem
+# {"encounter": "free_gem"}
+::THUD::
+
+You stumble upon a stone and land face first into the muck. 
+As you begin to lift yourself from the forest floor, you see a glint of light coming from the base of a nearby tree. 
+~ gems = gems + 1
++ [More] Upon closer inspection, it's a Gem! Score!
+++ [Continue] -> forest.index
+    
+
+= fairy
+# {"encounter": "fairy"}
+You feel as though the forest has decided to cease the endless racket of rustling and noises as you come to a particularly thick wall of trees.
+~ temp dice_roll = RANDOM(0, 100)
++ [Approach the Thicket] You approach, your {weapon_name} at the ready, prepared to battle whatever lies beyond 
+    ++ [Enter the Thicket] You move eyond the threshold of the thicket where you find a group of Fairies bathing in a small pond! 
+        {
+        - has_fairy: + [Leave them be] As you enter the Thicket, the fairy in your pocket begins to buzz. Better leave them be. 
+            ++ [Continue] -> forest.index
+        }
+        +++ [Attempt to catch one] 
+        
+        {
+            - dice_roll >= 80: You snatch an empty canteen from your pack and lurk up behind one of the Fairies.
+                + [Steady...] With a swift swipe you CAPTURE one of the fairies and quickly cork the bottle. Ha! Got 'em!
+                ~ has_fairy = true
+                    ++ [Continue] -> forest.index
+            - else: You snatch an empty canteen from your pack and lurk up behind one of the Fairies. 
+                + [Continue] They immediately notice you! The group scatters as you swipe to capture one and instead grab a spiked vine, which rips open a tear in your hand. 
+                    Your health is reduced to 1!
+                    ~ hitpoints = 1
+                    ++ [Continue] -> forest.index
+        }
+        +++ [Ask for a blessing] You startle them when you say "Hi. Sorry to interrupt--" the fairies cut you off. You feel a tingle course through your body as they flutter off into the woods. 
+            ~ spirits = "high"
+            You feel as if you could take on the world!
+            ~gems = gems + 10
+            YOU GAIN 10 GEMS!
+            ++++ [Continue] -> forest.index
+            
+        +++ [Leave them be] -> forest.index
+
+= bag_of_gold
+# {"encounter": "bag_of_gold"}
+~ temp dice_roll = RANDOM((100 / rank*2), (1000 / rank * rank))
+~ gold = gold + dice_roll
+You come upon a clearing in the forest. 
++ [Look around the clearing] You notice a small mound of dirt. Digging into it, you find a bag of gold containing {dice_roll} gold pieces! 
+    ++ [Well that's lucky. Continue] -> forest.index
+
+
+= ugly_stick
+# {"encounter": "ugly_stick"}
+As you cross a path with an old man, you exchange a polite node. As he passes beyond you, he whacks you with a stick! 
+~ temp dice_roll = RANDOM(0, 1)
+{ 
+    - dice_roll == 1: 
+        + [Ow!] You feel less like yourself. 
+        ~ charm = charm - 1
+        ++ [Continue] -> forest.index
+    - else: 
+        + [What the...] You feel cute, for some reason?
+        ~ charm = charm + 1
+            ++ [Continue] -> forest.index
+}
+
+
+= old_hag
+# {"encounter": "old_hag"}
+You arrive at a fork in the road -- an old woman catches your attention as you approach. 
+"If you give me a Gem, i'll grant you one wish!" she says. 
+
+What do you do?
++ [Give her a Gem] You give her a Gem.  "Well well, this will do nicely!"
+    ~ hitpoints_max = hitpoints_max + 1
+    ~ hitpoints = hitpoints_max
+    ~ gems = gems - 1
+    ++ [Continue] Your muscles bulge! You feel vigorous and healthy. Increased total hit points by 1!
+        +++ [Continue] -> forest.index
++ [No way!] You decide to leave the old woman behind, refusing her offer. "You'll regret this!" she screams.
+    ++ [Continue] -> forest.index
+
+
+= rescue
+# {"encounter": "rescue"}
+You stumble.
+
+This would normally not be notable, since this happens to you quite often - but what is interesting is WHAT you stumbled over.
+The object in question is a large dead bird. 
++ [Investigate the dead bird] The bird has a small scroll carefully tied to one leg. 
+    ++ [Continue] The scroll reads: 
+    To whom it may concern: 
+    
+    Geez, I am bored. I've been locked in the highest peak of this castle for as long as I can remember. Crikey, I would explain why, but I'm running out of ink.  You see, I've been up here for such a long time, it's drying up. Well, what do you know? I guess i have enough to explain after all! Isn't that a lucky break? Okay, I'm up here because I wa--
+    
+    The note trails off. It isn't signed. 
+    +++ [Continue] You quickly wipe a singular tear from your cheek as you put down the note. 
+        ++++ [Save Her] -> attempt_to_save
+        ++++ [Ignore them] You decide it's better off to let -- erm -- sleeping birds lay. 
+            +++++ [Continue] -> forest.index
+        
+= attempt_to_save
+# {"encounter": "rescue"}
+You're quite the hero! Unfortunately, You have no idea where the woman could be. You'll have to make a guess. Where to?
+~ temp actual_location = "{~castle|fortress|keep|lair}"
++ (castle) [Castle Coldrake] -> save_resolve(castle, actual_location)
++ (fortress) [Fortress Liddux] -> save_resolve(fortress, actual_location)
++ (keep) [Gannon Keep] -> save_resolve(keep, actual_location)
++ (lair) [Dema's Lair] -> save_resolve(lair, actual_location)
+
+= save_resolve(location, actual_location)
+# {"encounter": "rescue"}
+{ 
+ - location == actual_location: You head resolutely toward {location}. 
+    + [Continue] You arrive at {location}, brandishing {weapon_name} at anyone who looks at you the wrong way. 
+        ++ [Search the Castle] You hack and slash your way through the guards up and through the {location} until you come upon a locked door.  Smashing it with your shoulder, a maiden awaits!
+            +++ [Offer your hand] "Come with me!" you say, reaching out a hand to the fair maiden. She looks at you and squeals "You found my note!"
+            ++++ [Escape the {location}] As you make your escape, the maiden offers you a reward
+                    YOU RECEIVE 10 GEMS!
+                    ~ gems = gems + 10
+                    +++++ [Continue] -> forest.index 
+                    
+ - else: You head resolutely for {location}.  When you arrive, you grip your {weapon_name} with fortitude as you hack and slash your way through the {location}. 
+    + [Continue] As you make your way up to the tallest spire, you smash open the door and look inside. 
+        ++ [Continue] A confused monk stares back at you, oblivious the violence outside.  "Can I help you?" they ask, confounded by the interruption. 
+        +++ [Continue] Meekly, you look around at the havoc you have caused and attempt to escape before reinforcements arrive. 
+        ++++ [Continue] -> forest.index
+    
+}
+
 
 = fight
+# {"encounter": "forest_fight"}
 <ForestFight>
+
++ [Your Command?] -> fight
+
+
+= fight_resolution
+{forest_encounter_death_rattle}
+You gain {forest_encounter_experience_points}! 
+~ experience_points = experience_points + forest_encounter_experience_points
+You collect {forest_encounter_gold} from {forest_encounter_mob_name}'s corpse.
+~ gold = gold + forest_encounter_gold
+~ temp gemRoll = RANDOM(1, 10)
+{
+    - gemRoll > 80: 
+    ~ temp found_gems = (gemRoll * rank / 10)
+    ~ gems = gems + found_gems
+    You find {found_gems}!
+}
 
 + [Continue] -> forest.index
 
-
 === trainer === 
+# location: trainer
 -> index
 
 = index 
